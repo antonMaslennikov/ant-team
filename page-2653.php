@@ -32,7 +32,7 @@ get_header();
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-workflow">Порядок работы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-why">Почему мы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-results">Результаты наших клиентов</a></li>
-                        <?php /*<li class="navigation__item"><a class="navigation__link link" href="#">Дополнительные услуги</a></li>*/ ?>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-dop_services">Дополнительные услуги</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-tariffs">Тарифы</a></li>
                     </ul>
                 </div>
@@ -366,6 +366,8 @@ get_header();
 </section>
 
 <?php get_template_part('template-parts/tariffs') ?>
+
+<?php get_template_part('template-parts/dop_services') ?>
 
 <?php
 the_content();

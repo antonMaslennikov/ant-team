@@ -211,6 +211,17 @@
   }
 }
 
+.dop_services {
+  &__slider {
+    display: flex;
+    margin: 0 -3px;
+  }
+  &__item {
+    flex: 0 1 33.3%;
+    margin: 0 3px;
+  }
+}
+
 .text-video {
   &__hided-content {
     width: 65%;

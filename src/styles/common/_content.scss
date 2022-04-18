@@ -652,6 +652,77 @@
     text-decoration: none;
   }
 }
+
+
+.dop_services {
+  padding: 50px 0 30px 0;
+  background: $deepwater;
+  &.add-service {
+    background: $deepwater;
+  }
+  &__header {
+    margin-bottom: 30px;
+    & h2 {
+      color: $white;
+    }
+  }
+  &__slider {
+    margin: 0 -15px;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+}
+
+.dop_service {
+  position: relative;
+  padding: 0 3px;
+  &__header {
+    background: $crystalblue;
+    border-radius: 10px 10px 0 0;
+    padding: 20px 15px;
+  }
+  &__name {
+    color: $black;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__title {
+    color: $black;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
+  &__price {
+    font-family: "Montserrat Semibold", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $darkgrey;
+  }
+  &__content {
+    background: $white;
+    height: 174px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat Regular", sans-serif;
+    color: $black;
+  }
+  &__link {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    width: auto;
+    text-decoration: none;
+  }
+}
+
 .text-video {
   background: $deepwater;
   padding: 50px 0;
