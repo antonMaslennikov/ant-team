@@ -51,7 +51,7 @@ foreach($pageMeta AS $key => $value) {
                                 <div class="text">
                                     <?= $pageMeta['welcome_text'][0] ?>
                                     <a class="btn btn-small" href="#takeAleksandrAnswer" data-fancybox>задать вопрос <?= $eMeta['name_dat'][0] ?></a>
-                                    <a class="btn btn-small" href="tel:<?= $eMeta['phone'][0] ?? '78125092230' ?>">позвонить</a>
+                                    <a class="btn btn-small" href="tel:<?= $eMeta['phone'][0] ? $eMeta['phone'][0] : '78125092230' ?>">позвонить</a>
                                 </div>
                                 <?php if (has_post_thumbnail($page->ID)): ?>
                                     <?php $img_src = get_the_post_thumbnail_url($page->ID, '343_503'); ?>
