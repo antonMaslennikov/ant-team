@@ -1,0 +1,136 @@
+.search {
+  width: 40%;
+}
+.main-header {
+  .search {
+    width: 28%;
+  }
+}
+
+.review {
+  &__comment {
+    width: 30%;
+  }
+  &__graph {
+    width: 65%;
+  }
+}
+
+.advantages {
+  width: 65%;
+  margin-left: -20px;
+}
+.certificates {
+  width: 35%;
+}
+
+.seo {
+  width: 50%;
+  margin-left: -20px;
+}
+
+.approach {
+  width: 50%;
+  &__wrapper {
+    width: 69%;
+  }
+  &__graph {
+    margin: 40px 0 0 0;
+  }
+}
+.audit {
+  &__form {
+    width: 444px;
+    margin-right: 0;
+  }
+}
+
+.workflow {
+  &__list {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  &__item {
+    flex: 0 1 calc(16.66% - 40px);
+  }
+}
+
+.alexandr {
+  &__wrapper {
+    display: flex;
+    align-items: end;
+  }
+  &__form {
+    width: 440px;
+  }
+  &__desc {
+    & .text {
+      padding-left: 10px;
+      padding-right: 80px;
+    }
+    & .img {
+      margin: 0;
+    }
+  }
+}
+
+.history {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -30px;
+  }
+  &__item {
+    flex: 0 1 33.33%;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+}
+
+.experience {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -30px;
+  }
+  &__item {
+    box-sizing: border-box;
+    padding: 0 30px;
+    flex: 0 1 33.33%;
+  }
+}
+
+.why {
+  &__form {
+    margin-right: 0;
+  }
+}
+
+.form {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.photos {
+  &__slider {
+    margin: 30px -3px 0px -2px;
+  }
+}
+
+.videos {
+  &__slider {
+    margin: 30px -3px 0px -2px;
+  }
+}
+
+.content {
+  padding: 0 15px;
+  &__item {
+    flex: 0 1 25%;
+  }
+}
+
+.hidden-xl {
+  display: none;
+}

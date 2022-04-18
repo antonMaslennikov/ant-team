@@ -1,0 +1,602 @@
+doctype html
+html(lang="ru")
+  head
+    title='Main'
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    script(type='text/javascript')
+  body
+    .page
+      include ./common/_main_header
+      .ribbon
+        .container
+          .row
+            .col-12
+              .ribbon__wrapper
+                p Вежливое обращение в подарок к заказу SEO-продвижения
+                a.btn.btn-small.ribbon__get Получить
+                .ribbon__close
+                  img(src=require('../assets/icons/close.svg'))
+      // Seo promotion
+      section.seo-promotion
+        .container
+          .row
+            .col-12
+              .seo-promotion__wrapper
+                .seo-promotion__list
+                  h1 SEO-продвижение
+                  .seo-promotion__item
+                    span Технический аудит
+                    a.link.link--more(href='#') подробнее
+                      img(src=require('../assets/icons/S_link.svg'))
+                  .seo-promotion__item
+                    span Сбор семантики
+                    a.link.link--more(href='#') подробнее
+                      img(src=require('../assets/icons/S_link.svg'))
+                  .seo-promotion__item
+                    span YMYL-аудит
+                    a.link.link--more(href='#') подробнее
+                      img(src=require('../assets/icons/S_link.svg'))
+                  .seo-promotion__item
+                    span Аудит коммерческих факторов
+                    a.link.link--more(href='#') подробнее
+                      img(src=require('../assets/icons/S_link.svg'))
+                .seo-promotion__form
+                  form.form
+                    span.form__title Заявка на SEO-продвижение сайта от Ant-Team.ru
+                    p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Имя
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Телефон
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Адрес сайта
+                    div
+                      button.btn Отправить
+                      div
+                        .form-control
+                          label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                            input(type='checkbox')
+                            span.check
+                              img(src=require('../assets/icons/check.svg'))
+
+      // Navigation
+      section.navigation
+        .container
+          .row
+            .col-12
+              .navigation__wrapper
+                ul.navigation__list
+                  - var navigations = ['Отзывы', 'Топ Яндекс и Google', 'Команда', 'Преимущества', 'Сертификаты', 'Комплексный подход', 'Тарифы', 'Как мы работаем', 'FAQ', 'Кейсы', 'Статьи', 'Конференции']
+                  each nav in navigations
+                    if nav === 'Отзывы'
+                      li.navigation__item.active
+                        a.navigation__link.link(href='#')= nav
+                    else
+                      li.navigation__item
+                        a.navigation__link.link(href='#')= nav
+      // reviews
+      section.reviews
+        .container
+          .row
+            .col-12
+              .reviews__wrapper
+                .reviews__header
+                  .section__header
+                    h2 Отзывы
+                    .reviews__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                    a.link.link--more(href='#') все отзывы
+                      img(src=require('../assets/icons/S_link.svg'))
+                  .reviews__average.hidden-xs.display-flex-md
+                    div Средний рейтинг: 5 из 5 (4 отзыва)
+                      a.btn.btn-small Оставить отзыв
+                .reviews__slider
+                  .reviews__item
+                    .review
+                      .review__comment
+                        h3.review__title Avrora-Medi.ru
+                        .review__rating
+                          .rating
+                            .rating__under-layer
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                            .rating__top-layer(style='width:70%')
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                        .review__text Многие сертификаты и достижения свидетельствуют о том, что успешное продвижение сайтов и привлечение клиентов – работа, которую мы знаем и выполняем на «отлично»
+                        .review__author
+                          b Иванов Василий
+                          span директор компании
+                        .review__social
+                          a(href='#')
+                            img(src=require('../assets/icons/vk.svg'))
+                      .review__graph
+                        img(src=require('../assets/images/review_graph.png'))
+                  .reviews__item
+                    .review
+                      .review__comment
+                        h3.review__title Avrora-Medi.ru
+                        .review__rating
+                          .rating
+                            .rating__under-layer
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                            .rating__top-layer(style='width:70%')
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                        .review__text Многие сертификаты и достижения свидетельствуют о том, что успешное продвижение сайтов и привлечение клиентов – работа, которую мы знаем и выполняем на «отлично»
+                        .review__author
+                          b Иванов Василий
+                          span директор компании
+                        .review__social
+                          a(href='#')
+                            img(src=require('../assets/icons/vk.svg'))
+                      .review__graph
+                        img(src=require('../assets/images/review_graph.png'))
+                  .reviews__item
+                    .review
+                      .review__comment
+                        h3.review__title Avrora-Medi.ru
+                        .review__rating
+                          .rating
+                            .rating__under-layer
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                              img(src=require('../assets/icons/rating.svg'))
+                            .rating__top-layer(style='width:70%')
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                              img(src=require('../assets/icons/star.svg'))
+                        .review__text Многие сертификаты и достижения свидетельствуют о том, что успешное продвижение сайтов и привлечение клиентов – работа, которую мы знаем и выполняем на «отлично»
+                        .review__author
+                          b Иванов Василий
+                          span директор компании
+                        .review__social
+                          a(href='#')
+                            img(src=require('../assets/icons/vk.svg'))
+                      .review__graph
+                        img(src=require('../assets/images/review_graph.png'))
+                .reviews__average.hidden-md
+                  div Средний рейтинг: 5 из 5 (4 отзыва)
+                  a.btn.btn-small Оставить отзыв
+      // promote top
+      section.promote-top
+        .container
+          .row
+            .col-12
+              .promote-top__wrapper
+                .promote-top__header
+                  h2 Выводим сайты клиентов в топ Яндекс и Google
+                .actions__slider
+                  .actions__item.action
+                    .action__icon.
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                    .action__desc Увеличиваем рост посещаемости сайта и количество заявок.
+                  .actions__item.action
+                    .action__icon.
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                    .action__desc Используем самые современные технологии.
+                  .actions__item.action
+                    .action__icon.
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                    .action__desc Применяем только проверенные и безопасные схемы продвижения.
+                .promote-top__desc Оставьте заявку —  мы свяжемся с вами и дадим честную оценку, как сможем помочь вашему сайту увеличить продажи.
+      // employees
+      section.employees
+        .container
+          .row
+            .col-12
+              .employees__wrapper
+                .employees__header
+                  .section__header
+                    h2 Команда Ant-Team.ru
+                    .employees__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                    a.link.link--more(href='#') подробно о нас
+                      img(src=require('../assets/icons/S_link.svg'))
+                .employees__slider
+                  each n in [1,2,3,4,5,6,7,8]
+                    .employees__item
+                      .employee
+                        .employee__photo
+                          if n == 1
+                            img(src=require('../assets/images/alexandr.png'))
+                          else
+                            img(src=require('../assets/images/employee_placeholder.png'))
+                        .employee__name
+                          .first-name Александр
+                          .surname Чепукайтис
+                        .employee__title Руководитель digital-агентства Ant-Team.ru
+                        if n != 1
+                          .employee__email
+                            a.link(href='') al@ant-team.ru
+                        if n == 1
+                          .employee__about-link
+                            a.link(href='#') об Александре
+                              img(src=require('../assets/icons/S_link.svg'))
+      section
+        .dual
+          section.advantages
+            .container
+              .row
+                .col-12
+                  .advantages__wrapper
+                    .advantages__header
+                      .section__header
+                        h2 Преимущества
+                        .advantages__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                    .advantages__slider
+                      .advantages__item
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Более 10 лет выводим сайты в топ Яндекс и Google
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Комплексный подход к продвижению
+                      .advantages__item
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Более 10 лет выводим сайты в топ Яндекс и Google
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Комплексный подход к продвижению
+                      .advantages__item
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Более 10 лет выводим сайты в топ Яндекс и Google
+                        .advantage
+                          .advantage__icon.
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                          .advantage__desc Комплексный подход к продвижению
+          section.certificates
+            .container
+              .row
+                .col-12
+                  .certificates__wrapper
+                    .certificates__header
+                      .section__header
+                        h2 Сертификаты
+                        .certificates__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                    .certificates__slider
+                      each n in [1,2,3,4,5]
+                        .certificate__item
+                          .certificate
+                            img(src=require('../assets/images/certificate.png'))
+      section
+        .dual-md
+          section.seo
+            .container
+              .row
+                .col-12
+                  .seo__wrapper
+                    .seo__header
+                      h2 SEO
+                  .seo__list
+                    ul
+                      li.active Работа с инфотрафиком <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                        ul
+                          li YMYL-аудит блога и ТЗ на доработку дизайна
+                          li Анализ инфотрафика конкурентов
+                          li Сбор инфосемантики
+                          li ТЗ на инфостатьи
+                          li Написание и размещение статей в блоге
+                      li Контентные работы <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Сниппет <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Работа с репутацией <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Региональное ранжирование <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Аналитика <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Ссылочные факторы <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Семантика <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Технические факторы <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li YMYL-факторы <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+                      li Текстовая оптимизация <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_324:32891)"><path d="M9.49887 1.00023V11.8702L13.8589 8.24023C14.2789 7.89023 14.9089 7.94023 15.2689 8.37023C15.6289 8.80023 15.5689 9.42023 15.1389 9.78023L9.13887 14.7802C9.10887 14.7902 9.07887 14.8002 9.03887 14.8202C8.97887 14.8602 8.92887 14.8902 8.85887 14.9202C8.80887 14.9402 8.74887 14.9602 8.68887 14.9702C8.62887 14.9802 8.55887 14.9902 8.49887 14.9902C8.43887 14.9902 8.36887 14.9802 8.30887 14.9702C8.24887 14.9602 8.18887 14.9402 8.12887 14.9202C8.06887 14.8902 8.00887 14.8602 7.94887 14.8202C7.91887 14.8002 7.87887 14.7902 7.84887 14.7702L1.84887 9.77023C1.61887 9.57023 1.49887 9.29023 1.49887 9.00023C1.49887 8.77023 1.57887 8.55023 1.72887 8.36023C2.07887 7.94023 2.70887 7.88023 3.13887 8.23023L7.49887 11.8702V1.00023C7.49887 0.450234 7.94887 0.000234604 8.49887 0.000234604C9.04887 0.000234604 9.49887 0.450234 9.49887 1.00023Z" fill="#2F80ED"/></g><defs><clipPath id="clip0_324:32891"><rect width="15" height="15" fill="white" transform="translate(0.996582)"/></clipPath></defs></svg>
+          section.approach
+            .container
+              .row
+                .col-12
+                  .approach__wrapper
+                    .approach__header
+                      h3 Комплексный подход к продвижению
+                    .approach__text
+                      p Детальная проработка сайта —  наша сильная сторона.
+                      p Мы комплексно работаем над сайтом, уделяя внимание каждому нюансу.
+                      p Мы не просто собираем семантику и пишем тексты, мы прорабатываем сайт с точки зрения технических ошибок, требований YMYL, регионального продвижения, работаем с репутацией, постоянно анализируем конкурентов и делаем всевозможную аналитику.
+                      p Это позволяет нашим клиентам не только добиваться первых позиций в поисковой выдаче, увеличивать трафик и количество заявок, но также сохранять и улучшать результаты в условиях жесткой конкурентной борьбы.
+                    .approach__graph
+                      img(src=require('../assets/images/seo.jpg'))
+      section.tariffs
+        .container
+          .row
+            .col-12
+              .tariffs__wrapper
+                .tariffs__header
+                  h2 Тарифы
+                .tariffs__slider
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Региональный
+                        span.tariff__price от 30 000 ₽
+                      .tariff__content
+                        .tariff__desc Для региональных сайтов услуг. Стандартная оптимизация по  чек-листу
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Сайт услуг
+                        span.tariff__price от 40 000 ₽
+                      .tariff__content
+                        .tariff__desc Работа по относительно узкой семантике. Тут важно понимать, что относительно узкая в нашем понимании - это крайне широкая для большинства.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Интернет-магазин
+                        span.tariff__price от 60 000 ₽
+                      .tariff__content
+                        .tariff__desc Увеличение видимости по большому семантическому ядру. Работы по повышению конверсионности.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Агрегатор
+                        span.tariff__price от 100 000 ₽
+                      .tariff__content
+                        .tariff__desc Работы с очень большими семантическими ядрами. Повышение поведенческих факторов. "Оккупирование" локальной выдачи.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+      section.text-video
+        .container
+          .row
+            .col-12
+              .text-video__content
+                .text-video__hided-content
+                  p SEO —  не мифическая наука. Это конкретный набор знаний и четкое понимание, как работают алгоритмы поисковых систем.
+                  p Если вы закажете SEO-продвижение в Ant-Team.ru, мы детально изучим ваш сайт и ваших главных конкурентов и на основе этого предложим стратегию продвижения, которая будет эффективна именно для вашего бизнеса.
+                  p Мы разрабатываем индивидуальный план работ для каждого клиента. И всегда можем объяснить и доказать важность любого пункта. Кроме того, мы готовим отдельный план работ на каждый месяц и обсуждаем его с клиентом. В процессе оптимизации сайта мы можем корректировать стратегию с учетом новых задач или новых условий со стороны поисковых систем.
+                .text-video__visible-content
+                  figure
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/U3ASj1L6_sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    figcaption Baltic Digital Days 2020 “Как я строил Ant-Team.ru и что из этого вышло”
+              .text-video__expand
+                a.link(href='#') Показать всё
+                  img(src=require('../assets/icons/B_expand.svg'))
+      section.how-we-work
+        .container
+          .row
+            .col-12
+              .how-we-work__wrapper
+                .how-we-work__header
+                  h2 Как мы работаем
+                .how-we-work__text
+                  ul.collapsed
+                    li.active
+                      span Почему плата за нормо-часы —  наше преимущество?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div
+                        p Мы работаем над SEO-продвижением сайтов более 10 лет и уверены, что оплата по чеку за каждый вид работ неэффективна и невыгодна для клиента. Каждый проект отличается от другого. И одна и та же задача может потребовать 5 часов на одном проекте и 50 часов на другом. Поэтому мы продаем не отдельные услуги, а время работы специалистов. И если технический аудит вашего сайта занимает всего несколько часов, вам не придется платить лишние деньги за запас времени, заложенный в стандартном чеке.
+                        p Заказывая SEO-продвижение в Ant-Team.ru, вы будете платить только за реальные работы.
+                    li
+                      span Не останавливаемся на достигнутом
+                        img(src=require('../assets/icons/B_expand.svg'))
+                    li
+                      span Мы общаемся с нашими клиентами
+                        img(src=require('../assets/icons/B_expand.svg'))
+                    li
+                      span Постоянно развиваемся
+                        img(src=require('../assets/icons/B_expand.svg'))
+      section.who-did-kf
+        .container
+          .row
+            .col-12
+              .who-did-kf__wrapper
+                .who-did-kf__header
+                  .section__header
+                    h2 Кто выполняет аудит КФ
+                    .who-did-kf__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                .who-did-kf__slider
+                  .who-did-kf__item
+                    .specialist
+                      .specialist__icon
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                      .specialist__title Старший SEO-специалист
+                      .specialist__desc Отвечает за анализ и стратегию продвижения проекта
+                  .who-did-kf__item
+                    .specialist
+                      .specialist__icon
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                      .specialist__title Копирайтеры
+                      .specialist__desc Пишут тексты по составленным ТЗ
+                  .who-did-kf__item
+                    .specialist
+                      .specialist__icon
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                      .specialist__title Старший SEO-специалист
+                      .specialist__desc Отвечает за анализ и стратегию продвижения проекта
+                  .who-did-kf__item
+                    .specialist
+                      .specialist__icon
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                      .specialist__title Старший SEO-специалист
+                      .specialist__desc Отвечает за анализ и стратегию продвижения проекта
+                  .who-did-kf__item
+                    .specialist
+                      .specialist__icon
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                      .specialist__title Старший SEO-специалист
+                      .specialist__desc Отвечает за анализ и стратегию продвижения проекта
+      section.faq
+        .container
+          .row
+            .col-12
+              .faq__wrapper
+                .faq__content
+                  .faq__header
+                    h2 FAQ
+                  ul.collapsed
+                    li.active
+                      span Смогу ли я общаться с SEO-специалистами, задавать вопросы, корректировать задачи?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Как я смогу контролировать работу?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span У меня будет персональный менеджер?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Сколько стоит весь комплекс услуг по сео-продвижению?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Можно ли заказать у вас отдельную услугу, а не весь комплекс работ?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                .faq__form
+                  form.form
+                    span.form__title Заявка на SEO-продвижение сайта от Ant-Team.ru
+                    p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Имя
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Телефон
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Адрес сайта
+                    div
+                      button.btn Отправить
+                      div
+                        .form-control
+                          label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                            input(type='checkbox')
+                            span.check
+                              img(src=require('../assets/icons/check.svg'))
+      section.cases
+        .container
+          .row
+            .col-12
+              .cases__wrapper
+                .cases__header
+                  .section__header
+                    h2 Кейсы
+                    .cases__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                    a.link.link--more(href='#') все кейсы
+                      img(src=require('../assets/icons/S_link.svg'))
+                .cases__slider
+                  each n in [0,1,2,3,4,5,6,7]
+                    .cases__item
+                      .card
+                        .card__picture
+                          img(src=require('../assets/images/case.png'))
+                        .card__content
+                          .card__theme
+                            ul
+                              li тема
+                              li Кейс
+                          .card__title Кейс представлен как статья
+                          a.card__link(href='#') читать
+                            img(src=require('../assets/icons/S_link.svg'))
+                          .card__desc Как мне попасть в Google My Business, если несколько моих компаний находятся по одному адресу? Сколько профилей я могу создать, если на законных основаниях веду более одного бизнеса? Какие санкции грозят мне в случае ошибки? Как мне назвать свои компании, расположенные по одному адресу? Эти и многие другие вопросы из года в год заполняют SEO-форумы в интернете.
+                          .card__tags #дизайн #контент
+                        .card__footer
+                          .card__date
+                            img(src=require('../assets/icons/calendar.svg'))
+                            span 17.10.21
+                          .card__views
+                            img(src=require('../assets/icons/eye.svg'))
+                            span 75 039
+                          .card__rating
+                            img(src=require('../assets/icons/rating.svg'))
+                            span 4.5
+                          .card__comments-count
+                            img(src=require('../assets/icons/comment.svg'))
+                            span 7
+      section.articles
+        .container
+          .row
+            .col-12
+              .articles__header
+                .section__header
+                  h2 Статьи
+                  .articles__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                  a.link.link--more(href='#') все статьи
+                    img(src=require('../assets/icons/S_link.svg'))
+              .articles__slider
+                each n in [1,2,3,4,5,6,7,8]
+                  .articles__item
+                    .card.card--bordered
+                      .card__picture
+                        img(src=require('../assets/images/case.png'))
+                      .card__content
+                        .card__theme
+                          ul
+                            li.mark.mark--junior Junior
+                            li тема
+                            li Кейс
+                        .card__title Кейс представлен как статья
+                        a.card__link(href='#') читать
+                          img(src=require('../assets/icons/S_link.svg'))
+                        .card__desc Как мне попасть в Google My Business, если несколько моих компаний находятся по одному адресу? Сколько профилей я могу создать, если на законных основаниях веду более одного бизнеса? Какие санкции грозят мне в случае ошибки? Как мне назвать свои компании, расположенные по одному адресу? Эти и многие другие вопросы из года в год заполняют SEO-форумы в интернете.
+                        .card__tags #дизайн #контент
+                      .card__footer
+                        .card__date
+                          img(src=require('../assets/icons/calendar.svg'))
+                          span 17.10.21
+                        .card__views
+                          img(src=require('../assets/icons/eye.svg'))
+                          span 75 039
+                        .card__rating
+                          img(src=require('../assets/icons/rating.svg'))
+                          span 4.5
+                        .card__comments-count
+                          img(src=require('../assets/icons/comment.svg'))
+                          span 7
+      section.conferences
+        .container
+          .row
+            .col-12
+              .conferences__wrapper
+                .conferences__header
+                  .section__header
+                    h2 Мы на конференциях
+                    a.link.link--more(href='#') больше видео
+                      img(src=require('../assets/icons/S_link.svg'))
+                .conferences__slider
+                  each n in [1,2,3]
+                    .conferences__item
+                      .conference
+                        figure
+                          <iframe width="100%" height="250px" src="https://www.youtube.com/embed/U3ASj1L6_sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          figcaption Baltic Digital Days 2020 “Как я строил Ant-Team.ru и что из этого вышло”
+      include ./common/_footer
+

@@ -1,0 +1,364 @@
+doctype html
+html(lang="ru")
+  head
+    title='Main'
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    script(type='text/javascript')
+  body
+    .page
+      include ./common/_header
+      .ribbon
+        .container
+          .row
+            .col-12
+              .ribbon__wrapper
+                p Вежливое обращение в подарок к заказу SEO-продвижения
+                a.btn.btn-small.ribbon__get Получить
+                .ribbon__close
+                  img(src=require('../assets/icons/close.svg'))
+      .breadcrumbs
+        .container
+          .row
+            .col-12
+              .breadcrumbs__wrapper
+                ul.breadcrumbs__list
+                  li.breadcrumbs__item
+                    a.breadcrumbs__link(href='/') Главная
+                  li.breadcrumbs__item
+                    a.breadcrumbs__link(href='/') Блог
+                  li.breadcrumbs__item Название статьи
+      section.audit
+        .container
+          .row
+            .col-12
+              .audit__wrapper
+                .audit__content
+                  h1 Аудит коммерческих факторов
+                  p Узнайте от каких коммерческих факторов зависят ваши позиции в выдаче
+                  .audit__price
+                    span от 10 000 ₽
+                  a.link(href='#') смотреть все тарифы
+                    img(src=require('../assets/icons/S_link.svg'))
+                .audit__form
+                  form.form
+                    .form__success
+                      h3 Заявка принята
+                      p Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.
+                    span.form__title Заявка на SEO-продвижение сайта от Ant-Team.ru
+                    p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Имя
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Телефон
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Адрес сайта
+                    div
+                      button.btn Отправить
+                      div
+                        .form-control
+                          label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                            input(type='checkbox')
+                            span.check
+                              img(src=require('../assets/icons/check.svg'))
+      section.navigation
+        .container
+          .row
+            .col-12
+              .navigation__wrapper
+                ul.navigation__list
+                  - var navigations = ['Что проверяет аудит КФ', 'Кто выполняет аудит КФ', 'FAQ', 'Порядок работы', 'Почему мы', 'Результаты наших клиентов', 'Дополнительные услуги', 'Тарифы']
+                  each nav in navigations
+                    if nav === 'Отзывы'
+                      li.navigation__item.active
+                        a.navigation__link.link(href='#')= nav
+                    else
+                      li.navigation__item
+                        a.navigation__link.link(href='#')= nav
+      section.what-check
+        .container
+          .row
+            .col-12
+              .what-check__wrapper
+                .what-check__header
+                  h2 Что проверяет аудит КФ
+                .what-check__slider
+                  .what-check__item
+                    .check-list
+                      .check-list__title Интернет-магазин:
+                      ul.check-list__list
+                        li Мета-теги и заголовки
+                        li Видео
+                        li SEO-тексты
+                        li Цены и скидки
+                        li Количество товаров и категорий
+                        li Рейтинг и отзывы
+                        li Описание товара
+                        li и многое другое
+                  .what-check__item
+                    .check-list
+                      .check-list__title Сайт услуг:
+                      ul.check-list__list
+                        li Специалисты, филиалы, регионы
+                        li Цены и акции
+                        li Количество услуг
+                        li Отзывы и рейтинг
+                        li Информационная часть сайта
+                        li Сертификаты и лицензии
+                        li Описание услуги
+                        li и многое другое
+      section.faq.faq--full-size
+        .container
+          .row
+            .col-12
+              .faq__wrapper
+                .faq__content
+                  .faq__header
+                    h2 FAQ
+                  ul.collapsed
+                    li.active
+                      span Смогу ли я общаться с SEO-специалистами, задавать вопросы, корректировать задачи?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Как я смогу контролировать работу?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span У меня будет персональный менеджер?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Сколько стоит весь комплекс услуг по сео-продвижению?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+                    li
+                      span Можно ли заказать у вас отдельную услугу, а не весь комплекс работ?
+                        img(src=require('../assets/icons/B_expand.svg'))
+                      div Мы всегда на связи с клиентами. Общение происходит удобным для вас способом. Обычно мы создаем чат в Телеграм, где вы в любое время можете общаться с руководителем Ant-Team.ru Александром и старшим SEO-специалистом, ответственным именно за ваш проект. Также минимум раз в месяц или чаще (по желанию клиента) мы проводим совещания в Zoom.
+      section.workflow
+        .container
+          .row
+            .col-12
+              .workflow__header
+                h2 Порядок работы
+              .workflow__list
+                .workflow__item Отбор конкурентов по видимости и количеству страниц в индексе
+                .workflow__item Подготовка списка параметров сравнения и XPath-запросов
+                .workflow__item Сбор данных, не требующих парсинга
+                .workflow__item Подготовка списков урлов для парсинга
+                .workflow__item Парсинг, экспорт и подсчет результатов
+                .workflow__item Построение графиков, описание зависимостей и рекомендаций
+              .workflow__order
+                button.btn(href='#') заказать аудит
+      section.why
+        .container
+          .row
+            .col-12
+              .why__wrapper
+                .why__content
+                  .why__header
+                    .section__header
+                      h2 Почему мы
+                      .why__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                  .why__slider
+                    .why__item
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Квалификация
+                        .benefit__desc Над проектом одновременно работают специалисты разного уровня
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Опыт
+                        .benefit__desc Более 11 лет успешной работы в SEO
+                    .why__item
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Прозрачность
+                        .benefit__desc Доступ к CRM, подробные отчёты и обратная связь
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Без рисков
+                        .benefit__desc Все действия заранее продумываются, чтобы исключить вероятность попадания под фильтр
+                    .why__item
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Квалификация
+                        .benefit__desc Над проектом одновременно работают специалисты разного уровня
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Опыт
+                        .benefit__desc Более 11 лет успешной работы в SEO
+                    .why__item
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Квалификация
+                        .benefit__desc Над проектом одновременно работают специалисты разного уровня
+                      .benefit
+                        .benefit__icon
+                          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                        .benefit__title Опыт
+                        .benefit__desc Более 11 лет успешной работы в SEO
+                .why__form
+                  form.form
+                    .form__success
+                      h3 Заявка принята
+                      p Мы свяжемся с вами в ближайшее время.
+                    span.form__title Заявка на аудит КФ от Ant-Team.ru
+                    p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Имя
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Телефон
+                    .form-control
+                      input(type='text', placeholder='inside hint')
+                      label Адрес сайта
+                    div
+                      button.btn Отправить
+                      div
+                        .form-control
+                          label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                            input(type='checkbox')
+                            span.check
+                              img(src=require('../assets/icons/check.svg'))
+      section.results
+        .container
+          .row
+            .col-12
+              .results__wrapper
+                .results__header
+                  h2 Результаты наших клиентов
+                .results__content
+                  .results__nav
+                    ul
+                      each n in [1, 2, 3]
+                        if n == 1
+                          li.active= 'Клиент ' + n
+                        else
+                          li= 'Клиент ' + n
+                  .results__slider
+                    each n in [1, 2, 3]
+                      .results__item
+                        ul
+                          li Настроен robots.txt для основного домена и поддоменов
+                          li Настроен Sitemap.xml для основного домена и поддоменов
+                          li Настроены зеркала
+                          li Склеен один из поддоменов с основным доменом
+                          li Уникализированы мета-теги и текст
+                          li Для поддоменов уникализированы контактные данные и мета-теги
+                          li Устранены висячие узлы и битые ссылки
+                          li Для поддоменов уникализированы контактные данные и мета-теги
+                          li Настроен robots.txt для основного домена и поддоменов
+                          li Настроен Sitemap.xml для основного домена и поддоменов
+                          li Настроены зеркала
+                          li Склеен один из поддоменов с основным доменом
+                          li Уникализированы мета-теги и текст
+                          li Для поддоменов уникализированы контактные данные и мета-теги
+                          li Устранены висячие узлы и битые ссылки
+                          li Для поддоменов уникализированы контактные данные и мета-теги
+                        .results__more
+                          a.link(href='') Показать все
+                            img(src=require('../assets/icons/B_expand.svg'))
+      section.tariffs.add-service
+        .container
+          .row
+            .col-12
+              .tariffs__wrapper
+                .tariffs__header
+                  h2 Дополнительные услуги
+                .tariffs__slider
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Региональный
+                        span.tariff__price от 30 000 ₽
+                      .tariff__content
+                        .tariff__desc Для региональных сайтов услуг. Стандартная оптимизация по  чек-листу
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Сайт услуг
+                        span.tariff__price от 40 000 ₽
+                      .tariff__content
+                        .tariff__desc Работа по относительно узкой семантике. Тут важно понимать, что относительно узкая в нашем понимании - это крайне широкая для большинства.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Интернет-магазин
+                        span.tariff__price от 60 000 ₽
+                      .tariff__content
+                        .tariff__desc Увеличение видимости по большому семантическому ядру. Работы по повышению конверсионности.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Агрегатор
+                        span.tariff__price от 100 000 ₽
+                      .tariff__content
+                        .tariff__desc Работы с очень большими семантическими ядрами. Повышение поведенческих факторов. "Оккупирование" локальной выдачи.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+      section.tariffs
+        .container
+          .row
+            .col-12
+              .tariffs__wrapper
+                .tariffs__header
+                  h2 Тарифы
+                .tariffs__slider
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Региональный
+                        span.tariff__price от 30 000 ₽
+                      .tariff__content
+                        .tariff__desc Для региональных сайтов услуг. Стандартная оптимизация по  чек-листу
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Сайт услуг
+                        span.tariff__price от 40 000 ₽
+                      .tariff__content
+                        .tariff__desc Работа по относительно узкой семантике. Тут важно понимать, что относительно узкая в нашем понимании - это крайне широкая для большинства.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Интернет-магазин
+                        span.tariff__price от 60 000 ₽
+                      .tariff__content
+                        .tariff__desc Увеличение видимости по большому семантическому ядру. Работы по повышению конверсионности.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+                  .tariffs__item
+                    .tariff
+                      .tariff__header
+                        span.tariff__name Тариф
+                        h3.tariff__title Агрегатор
+                        span.tariff__price от 100 000 ₽
+                      .tariff__content
+                        .tariff__desc Работы с очень большими семантическими ядрами. Повышение поведенческих факторов. "Оккупирование" локальной выдачи.
+                        a.btn.btn-small.tariff__link(href='#') Заказать
+
+
+      include ./common/_footer

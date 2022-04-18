@@ -1,0 +1,316 @@
+doctype html
+html(lang="ru")
+    head
+        title='Александр Чепукайтис'
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        script(type='text/javascript')
+    body
+        .page
+            include ./common/_header
+            .ribbon
+                .container
+                    .row
+                        .col-12
+                            .ribbon__wrapper
+                                p Вежливое обращение в подарок к заказу SEO-продвижения
+                                a.btn.btn-small.ribbon__get Получить
+                                .ribbon__close
+                                    img(src=require('../assets/icons/close.svg'))
+            .breadcrumbs
+                .container
+                    .row
+                        .col-12
+                            .breadcrumbs__wrapper
+                                ul.breadcrumbs__list
+                                    li.breadcrumbs__item
+                                        a.breadcrumbs__link(href='/') Главная
+                                    li.breadcrumbs__item Александр Чепукайтис
+            section.alexandr
+                .container
+                    .row
+                        .col-12
+                            .alexandr__wrapper
+                                .alexandr__content
+                                    .alexandr__header
+                                        h1 Александр Чепукайтис
+                                        p руководитель Ant-Team.ru
+                                    .alexandr__desc
+                                        .text
+                                            p Привет!
+                                            p Меня зовут Александр, я руководитель Ant-Team.ru.
+                                            p Я всегда открыт к диалогу с клиентами и буду рад ответить на ваши вопросы.
+                                            a.btn.btn-small(href='#') задать вопрос александру
+                                            a.btn.btn-small(href='#') позвонить
+                                        .img
+                                            img(src=require('../assets/images/alexandr.png'))
+                                .alexandr__form
+                                    form.form
+                                        .form__success
+                                            h3 Заявка принята
+                                            p Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.
+                                        span.form__title Заявка на SEO-продвижение сайта от Ant-Team.ru
+                                        p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Имя
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Телефон
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Адрес сайта
+                                        div
+                                            button.btn Отправить
+                                            div
+                                                .form-control
+                                                    label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                                                        input(type='checkbox')
+                                                        span.check
+                                                            img(src=require('../assets/icons/check.svg'))
+
+            section.history
+                .container
+                    .row
+                        .col-12
+                            .history__wrapper
+                                .history__item
+                                    .history__year 2009
+                                    ul.history__list
+                                        li Начал заниматься поисковой оптимизацией как фрилансер.
+
+                                    .history__year 2017
+                                    ul.history__list
+                                        li Организовал собственную компанию.
+                                .history__item
+                                    .history__year 2018
+                                    ul.history__list
+                                        li Победил в конкурсе от PromoPult «Я-Агентство: управление бизнесом в формате реалити».
+                                        li Начал вести спикерскую деятельность.
+                                        li Выступал на самых значимых профильных конференциях: РИФ+КИБ, Стачка, Optimization, BDD, РИФ-Воронеж, Cybermarketing и др.
+                                .history__item
+                                    .history__year 2019
+                                    ul.history__list
+                                        li На конференции Optimization-2019 по оценке зрителей занял 6 место среди более чем 70 спикеров.
+            section.experience
+                .container
+                    .row
+                        .col-12
+                            .experience__wrapper
+                                .experience__item
+                                    ul.experience__fact
+                                        li Опыт работы в SEO 12 лет.
+                                        li Один из первых в России начал говорить и писать о локальном SEO.
+                                .experience__item
+                                    ul.experience__fact
+                                        li Первый в рунете предоставил в широкое пользование полный перевод асессорской инструкции Google на русский язык.
+                                        li Регулярно проводит вебинары и живые лекции.
+                                .experience__item
+                                    ul.experience__fact
+                                        li Преподает SEO в Нетологии.
+                                        li Публикуется в крупных профильных интернет-изданиях: Seonews, Searchengines, VC, Blog.cybermarketing, Pr-cy и др.
+            section.cases
+                .container
+                    .row
+                        .col-12
+                            .cases__wrapper
+                                .cases__header
+                                    .section__header
+                                        h2 Публикации
+                                        .cases__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                                        a.link.link--more(href='#') все кейсы
+                                            img(src=require('../assets/icons/S_link.svg'))
+                                .cases__slider
+                                    each n in [0,1,2,3,4,5,6,7]
+                                        .cases__item
+                                            .card
+                                                .card__picture
+                                                    img(src=require('../assets/images/case.png'))
+                                                .card__content
+                                                    .card__theme
+                                                        ul
+                                                            li тема
+                                                            li Кейс
+                                                    .card__title Кейс представлен как статья
+                                                    a.card__link(href='#') читать
+                                                        img(src=require('../assets/icons/S_link.svg'))
+                                                    .card__desc Как мне попасть в Google My Business, если несколько моих компаний находятся по одному адресу? Сколько профилей я могу создать, если на законных основаниях веду более одного бизнеса? Какие санкции грозят мне в случае ошибки? Как мне назвать свои компании, расположенные по одному адресу? Эти и многие другие вопросы из года в год заполняют SEO-форумы в интернете.
+                                                    .card__tags #дизайн #контент
+                                                .card__footer
+                                                    .card__date
+                                                        img(src=require('../assets/icons/calendar.svg'))
+                                                        span 17.10.21
+                                                    .card__views
+                                                        img(src=require('../assets/icons/eye.svg'))
+                                                        span 75 039
+                                                    .card__rating
+                                                        img(src=require('../assets/icons/rating.svg'))
+                                                        span 4.5
+                                                    .card__comments-count
+                                                        img(src=require('../assets/icons/comment.svg'))
+                                                        span 7
+            section.articles
+                .container
+                    .row
+                        .col-12
+                            .articles__header
+                                .section__header
+                                    h2 Статьи
+                                    .articles__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                                    a.link.link--more(href='#') все статьи
+                                        img(src=require('../assets/icons/S_link.svg'))
+                            .articles__slider
+                                each n in [1,2,3,4,5,6,7,8]
+                                    .articles__item
+                                        .card.card--bordered
+                                            .card__picture
+                                                img(src=require('../assets/images/case.png'))
+                                            .card__content
+                                                .card__theme
+                                                    ul
+                                                        li.mark.mark--junior Junior
+                                                        li тема
+                                                        li Кейс
+                                                .card__title Кейс представлен как статья
+                                                a.card__link(href='#') читать
+                                                    img(src=require('../assets/icons/S_link.svg'))
+                                                .card__desc Как мне попасть в Google My Business, если несколько моих компаний находятся по одному адресу? Сколько профилей я могу создать, если на законных основаниях веду более одного бизнеса? Какие санкции грозят мне в случае ошибки? Как мне назвать свои компании, расположенные по одному адресу? Эти и многие другие вопросы из года в год заполняют SEO-форумы в интернете.
+                                                .card__tags #дизайн #контент
+                                            .card__footer
+                                                .card__date
+                                                    img(src=require('../assets/icons/calendar.svg'))
+                                                    span 17.10.21
+                                                .card__views
+                                                    img(src=require('../assets/icons/eye.svg'))
+                                                    span 75 039
+                                                .card__rating
+                                                    img(src=require('../assets/icons/rating.svg'))
+                                                    span 4.5
+                                                .card__comments-count
+                                                    img(src=require('../assets/icons/comment.svg'))
+                                                    span 7
+            section.confs
+                .container
+                    .row
+                        .col-12
+                            .confs__wrapper
+                                .confs__header
+                                    .section__header
+                                        h2 Конференции
+                                        .confs__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                                .confs__slider
+                                    each n in [1,2,3,4,5,6,7,8]
+                                        .confs__item
+                                            .conf
+                                                .conf__image
+                                                    img(src=require('../assets/images/Cybermarketing2018.svg'))
+                                                .conf__title Подпись есть или нет
+            section.photos
+                .container
+                    .row
+                        .col-12
+                            .photos__wrapper
+                                .photos__header
+                                    .section__header
+                                        h2 Фотографии
+                                        .photos__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                                        a.link.link--more(href='#') все фотографии
+                                            img(src=require('../assets/icons/S_link.svg'))
+                                .photos__slider
+                                    each n in [1,2,3,4,5,6,7,8,9,10,11,12]
+                                        .photos__item
+                                            .photo
+                                                a(data-fancybox='gallery', href=require('../assets/images/image.png'))
+                                                    img(src=require('../assets/images/image.png'))
+            section.videos
+                .container
+                    .row
+                        .col-12
+                            .videos__wrapper
+                                .videos__header
+                                    .section__header
+                                        h2 Видео
+                                        .videos__dots.slick-slider-numbers.hidden-xs.display-flex-lg
+                                        a.link.link--more(href='#') больше видео
+                                            img(src=require('../assets/icons/S_link.svg'))
+                                .videos__slider
+                                    each n in [1,2,3,4,5,6]
+                                        .videos__item
+                                            .video
+                                                figure
+                                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/U3ASj1L6_sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    figcaption Baltic Digital Days 2020 “Как я строил Ant-Team.ru и что из этого вышло”
+            section.achievments
+                .container
+                    .row
+                        .col-12
+                            .achievments__header
+                                h2 Достижения
+                            .achievments__content
+                                .achievments__item
+                                    .achievment
+                                        .achievment__icon
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#FFFFFF"/></svg>
+                                        .achievment__title 1 место
+                                        .achievment__desc Победитель конкурса от PromoPult «Я-Агентство: управление бизнесом в формате реалити»
+                                .achievments__item
+                                    .achievment
+                                        .achievment__icon
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#FFFFFF"/></svg>
+                                        .achievment__title Популярный спикер
+                                        .achievment__desc На конференции Optimization-2019 среди более чем 70 спикеров занял 6 место по оценке зрителей
+                                .achievments__item
+                                    .achievment
+                                        .achievment__icon
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#FFFFFF"/></svg>
+                                        .achievment__title Перевод асессорской инструкции
+                                        .achievment__desc Организовал перевод полной версии Руководства для асессоров Google на русский язык и выложил его в общий доступ
+            section.facts
+                .container
+                    .row
+                        .col-12
+                            .facts__wrapper
+                                .facts__content
+                                    .facts__header
+                                        h2 Факты об Александре
+                                    .facts__list
+                                        .facts__item
+                                            .fact
+                                                .fact__icon
+                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                                                .fact__desc Занимается SEO 12 лет.
+                                        .facts__item
+                                            .fact
+                                                .fact__icon
+                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                                                .fact__desc Клиенты доверяют нам. Некоторые из них работают с Александром с 2009 г.
+                                        .facts__item
+                                            .fact
+                                                .fact__icon
+                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg>
+                                                .fact__desc Был спикером на более чем 50 конференциях и вебинарах.
+                                .facts__form
+                                    form.form
+                                        .form__success
+                                            h3 Заявка принята
+                                            p Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.
+                                        span.form__title Заявка на SEO-продвижение сайта от Ant-Team.ru
+                                        p.form__desc Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Имя
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Телефон
+                                        .form-control
+                                            input(type='text', placeholder='inside hint')
+                                            label Адрес сайта
+                                        div
+                                            button.btn Отправить
+                                            div
+                                                .form-control
+                                                    label.checkbox Я ознакомлен и согласен с <a href='#'>Политикой в отношении обработки персональных данных</a>
+                                                        input(type='checkbox')
+                                                        span.check
+                                                            img(src=require('../assets/icons/check.svg'))
+            include ./common/_footer

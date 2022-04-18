@@ -1,0 +1,114 @@
+doctype html
+html(lang="ru")
+  head
+    title= 'Components'
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    script(type='text/javascript')
+    link(href="main.css")
+  body
+    section.container
+        h1 Typography
+        hr
+        h1 h1 title
+        h2 h2 title
+        h3 h3 title
+        h4 h4 title
+        h5 h5 title
+        h6 h6 title
+
+    section.container
+        h1 Colors
+        hr
+
+    section.container
+        h1 Links
+        hr
+        div
+            a.link(href='#') все отзывы
+
+    section.container
+        h1 Buttons
+        hr
+        div
+            button.btn CTA
+        div
+            button(disabled="disabled").btn CTA
+
+        div
+            button.btn.btn-simple Услуги
+                img(src=require('../assets/icons/B_expand.svg'))
+        div
+            button.btn.btn-simple.active Услуги
+        div
+            button(disabled="disabled").btn.btn-simple Услуги
+
+
+    section.container
+        h1 Inputs
+        hr
+        div
+            .form-control
+                input(type='text', placeholder='inside hint')
+                label input
+                .form-control__outside-hint outside hint
+        div
+            .form-control.has-error
+                input(type='text', placeholder='inside hint')
+                label input
+                .form-control__error alert text
+                .form-control__outside-hint outside hint
+        div
+            .form-control
+                textarea(placeholder='inside hint')
+                label input
+                .form-control__outside-hint outside hint
+
+    section.container
+        h1 Form
+        hr
+        div
+            form
+                .form-control
+                    input(type='text', placeholder='inside hint')
+                    label Имя
+                .form-control
+                    input(type='text', placeholder='inside hint')
+                    label Телефон
+                .form-control
+                    input(type='text', placeholder='inside hint')
+                    label Адрес сайта
+                .form-control
+                    input(type='text', placeholder='inside hint')
+                    label Адрес сайта
+                div
+                    button.btn Отправить
+                .row.align-items-flex-end
+                    .col-4
+                        .form-control
+                            input(type='text', placeholder='inside hint')
+                            label Имя
+                    .col-4
+                        .form-control
+                            input(type='text', placeholder='inside hint')
+                            label Телефон
+                    .col-4
+                        button.btn Отправить
+        div
+            .form-control
+                label.checkbox
+                    input(type='checkbox')
+                    span checkbox
+        div
+            .form-control
+                .label.radiobtn
+                    input(type='radio',name='radio')
+                    span option 1
+            .form-control
+                .label.radiobtn
+                    input(type='radio',name='radio')
+                    span option 2
+            .form-control
+                .label.radiobtn
+                    input(type='radio',name='radio')
+                    span option 3

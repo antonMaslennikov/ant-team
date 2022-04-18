@@ -1,0 +1,38 @@
+/* Colors */
+
+// main
+$black: #47413B;
+$darkgrey: #8A8682;
+$gray: #A9A5A0;
+$lightgray: #F3F2F0;
+$white: #FFFFFF;
+
+// second
+$deepwater: #354658;
+$rainyblue: #899FB8;
+$crystalblue: #E3F0FF;
+
+// button, link
+$blue: #2F80ED;
+$lightblue: #3CA1FF;
+$darkblue: #196BDA;
+$deepblue: #064292;
+$translucentCrystal: #BADAFF;
+
+// special
+$red: #EB5757;
+$lightred: #FFD7D7;
+$cream: #FFFAEA;
+$green: #34DC8B;
+$accient: #F6AE6B;
+
+$columns: 12;
+$gutter: 15;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 560px,
+  md: 900px,
+  lg: 1200px,
+  xl: 1400px
+)

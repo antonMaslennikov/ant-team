@@ -1,0 +1,21 @@
+$xs: 0px;
+$sm: 560px;
+$md: 900px;
+$lg: 1200px;
+$xl: 1400px;
+
+@media screen and (min-width: $xs) {
+  @import "small-mobile";
+}
+@media screen and (min-width: $sm) {
+  @import "mobile";
+}
+@media screen and (min-width: $md) {
+  @import "tablet";
+}
+@media screen and (min-width: $lg) {
+  @import "desktop";
+}
+@media screen and (min-width: $xl) {
+  @import "large-desktop";
+}

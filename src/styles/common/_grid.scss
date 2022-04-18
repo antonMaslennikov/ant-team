@@ -1,0 +1,43 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -15px;
+  & [class*="col-"] {
+    padding: 0 15px;
+  }
+  &.intend-20 {
+    margin: 0 -10px;
+    & [class*="col-"] {
+      padding: 0 10px;
+    }
+  }
+  &.intend-10 {
+    margin: 0 -5px;
+    & [class*="col-"] {
+      padding: 0 5px;
+    }
+  }
+  &.intend-0 {
+    margin: 0;
+    & [class*="col-"] {
+      padding: 0;
+    }
+  }
+}
+
+@mixin col-x-list {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: #{(100/$columns)*$i}#{'%'};
+      box-sizing: border-box;
+    }
+  }
+}
+
+@include col-x-list;

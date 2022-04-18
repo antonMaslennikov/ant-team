@@ -1,0 +1,448 @@
+.article-main
+	display: flex
+	flex-wrap: nowrap
+.article-page_bg
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	min-height: 740px
+	position: relative
+
+
+.article-page_bg .breadcrumb-item 
+	color: #fff
+.article-page_bg .breadcrumb-item a
+	color: #fff
+
+.breadcrumb-item.b_w+.breadcrumb-item.b_w::before
+	display: inline-block
+	padding-right: .5rem
+	color: #fff
+	content: "/"
+
+.article-page_bg::before
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0 , 0, 0, .7)
+
+
+.article-page-content
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	display: flex
+	align-items: center
+	color: #fff
+
+
+.acticle-title
+	font-size: 46px
+	font-weight: 500
+	text-transform: uppercase
+	color: #f4f44a
+	margin-bottom: 40px
+
+.article-page-content .article-info__footer-author
+	margin-left: 0
+	color: #fff
+	display: flex
+	align-items: center
+	padding: 10px 0
+
+.article-page-content .article-info__footer-author .author
+	margin-left: 10px
+
+.article-page-socials-wrapp
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	display: flex
+	align-items: flex-end
+	color: #fff
+	padding-bottom: 30px
+
+.acticle-page-socials
+	display: flex
+	justify-content: flex-end
+	flex-wrap: wrap
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: 500
+
+.acticle-page-socials p
+	color: #fff
+
+.acticle-page-socials__list
+	display: flex
+	width: 100%
+	justify-content: flex-end
+
+.acticle-page-socials__item
+	margin-left: 10px
+.acticle-page-socials__link
+	background: #f4f44a
+	width: 26px
+	height: 26px
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all .3s
+
+.acticle-page-socials__link:hover
+	opacity: .7
+	color: #000
+
+
+
+.article-page_bg .article-info__footer-item
+	font-size: 16px
+
+.article-page_bg .article-info__footer-item svg
+	margin-right: 5px
+
+.header-scroll-block_article-page
+	position: absolute
+	left: 50%
+	bottom: 0
+	transform: translateX(-50%)
+
+.article-page .subscribe
+	margin-bottom: 0
+
+.article-content__title
+	font-size: 36px
+	color: #3e81c3
+	text-transform: uppercase
+
+.article-content__item
+	font-size: 18px
+	color: #000
+	margin-bottom: 88px
+.article-content__item p
+	font-size: 14px
+	font-weight: normal
+
+.article-content__desc
+	position: relative
+	margin-bottom: 30px
+
+.article-content__desc p
+	padding: 0 0 30px 0
+	font-weight: 600
+
+.article-content__desc::before
+	content: ''
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 42px
+	height: 1px
+	color: #888888
+	background: #888888
+
+p.article-content__list__title
+	font-weight: 600
+	text-transform: uppercase
+	font-size: 24px
+	margin-bottom: 15px
+
+.article-content__list a
+	color: #6095cb
+	text-decoration: underline
+	font-size: 14px
+	font-weight: normal
+
+.article-content__after
+	position: relative
+	padding-bottom: 30px
+
+
+.article-content__after::after
+	content: ''
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 42px
+	height: 1px
+	color: #888888
+	background: #888888
+
+.article-content__desc_list
+	padding-top: 30px
+	padding-bottom: 15px
+
+
+.article-content__desc_list p
+	padding: 0
+	margin: 0
+	font-weight: 600
+	font-size: 14px
+	text-transform: uppercase
+
+.article-content__item_list
+	font-size: 14px
+	margin-bottom: 15px
+
+.article-content__item_list li
+	position: relative
+	padding-left: 20px
+
+.article-content__item_list li::before
+	content: ''
+	width: 5px
+	height: 5px
+	position: absolute
+	left: 0
+	top: 50%
+	border-radius: 50%
+	background: #6095cb
+	transform: translateY(-50%)
+
+.article-content__item__inner_p
+	padding: 0 0 20px 0
+	margin: 0
+
+
+.article-content__item__inner_p a
+	color: #6095cb
+	text-decoration: underline
+	font-size: 14px
+	font-weight: normal
+
+blockquote
+	position: relative
+	padding-left: 100px
+
+blockquote::before
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 23px
+	height: 17px
+	background: url('../assets/images/citata.png') no-repeat
+blockquote
+	font-weight: 600
+	font-style: italic
+//blockquote:after
+//	content: ''
+//	position: absolute
+//	top: 0
+//	left: 73px
+//	width: 8px
+//	height: 100%
+//	background: #f4f44a
+blockquote cite
+	width: 100%
+	display: block
+	text-align: right
+	font-size: 12px
+	font-weight: 600
+	margin-bottom: 30px
+	font-style: normal
+
+.pt-30
+	padding-top: 30px
+
+.mb-10
+	margin-bottom: 10px
+.article-content__picture
+	// height: 365px
+	width: 100%
+	text-align: right
+	margin-bottom: 0
+
+.article-content__picture figcaption
+	padding: 25px 0
+	font-size: 12px
+	font-weight: 600
+
+.article-content-gray
+	background: #e5e5e5
+	// margin: 35px 0 25px 0
+	padding: 20px 15px
+
+.article-content-gray p
+	margin-bottom: 0
+	font-weight: 600
+	font-size: 18px
+	font-style: italic
+
+
+
+.article-socials
+	// margin-top: -88px
+	padding: 20px 0 
+	border-top: 1px solid rgb(136, 136, 136)
+
+
+.article-socials p
+	margin-bottom: 20px
+	font-weight: 600
+	font-size: 14px
+	text-transform: uppercase
+	color: #000
+
+
+.acticle-page-socials__list__inner
+	display: flex
+	width: 100%
+	justify-content: flex-end
+	list-style: none
+
+
+.acticle-page-socials__list__inner .acticle-page-socials__item
+	margin-left: 0
+	margin-right: 10px
+
+
+.article-autor
+	background: #8ed0ef
+	padding: 20px 15px
+	border-radius: 3px
+	margin-bottom: 95px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.article-autor__pic
+	display: inline-block
+	vertical-align: middle
+	border-radius: 50%
+	width: 70px
+	height: 70px
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+.article-autor__pic img
+	display: none
+
+
+.article-autor__name
+	display: inline-block
+	vertical-align: middle
+	margin-left: 15px
+
+.article-autor__name p
+	font-size: 14px
+	font-weight: 600
+	text-transform: uppercase
+	margin-bottom: 0
+
+
+.article-autor__name span
+	font-size: 14px
+	font-weight: 600
+	font-style: italic	
+	display: block
+	margin-bottom: 10px
+	
+.article-autor__name a
+	font-size: 12px
+	border-bottom: 1px dashed transparent
+
+
+.article-autor__name a:hover
+	color: #f4f44a
+	border-bottom: 1px dashed #f4f44a
+
+
+.article-autor__links p
+	font-size: 14px
+	font-weight: 600
+	text-transform: uppercase
+
+.article-autor__links a
+	position: relative
+	font-size: 12px
+	border-bottom: 1px dashed transparent
+	color: #000
+
+.article-autor__links a:hover
+	color: #f4f44a
+	border-bottom: 1px dashed #f4f44a
+
+
+.form-subscribe
+	.form__input
+		margin-top: 0
+
+.subscribe
+	.section-title
+		margin-bottom: 30px
+
+
+div.wpcf7 .ajax-loader
+	width: 0
+	height: 0
+
+.modal-body input.wpcf7-form-control.wpcf7-submit
+	margin-bottom: -20px
+
+.article-page-main h1, h2, h3, h4
+	text-transform: uppercase
+	margin-bottom: 10px
+	font-weight: 600
+.article-page-main h2
+	position: relative
+		padding-top: 30px
+	margin-top: 30px
+	padding-bottom: 30px
+	margin-bottom: 30px
+	font-size: 36px
+	font-weight: 500
+	color: #3e81c3
+
+.article-page-main h2:before
+	content: ''
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 42px
+	height: 1px
+	color: #888888
+	background: #888888
+
+.article-page-main
+	h4
+		font-size: 14px
+
+	h3
+		font-size: 24px
+
+cite
+	width: 100%
+	display: block
+	text-align: right
+	font-size: 12px
+	font-weight: 600
+	margin-bottom: 30px
+	font-style: normal
+
+.article-content-wrapp
+	ol
+		counter-reset: ite
+		font-size: 14px
+		margin-bottom: 15px
+		li
+			display: block
+			position: relative
+			:before
+				content: counter(item) ". "
+				counter-increment: item
+				color: #3e81c3
+				font-weight: 600
