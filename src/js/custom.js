@@ -32,4 +32,17 @@ $(document).ready(function () {
     document.addEventListener( 'wpcf7mailsent', function( event ) {
         //console.log(event.srcElement);
     }, false );
+
+    $('form').on('submit',function(){
+
+        var thisForm=$(this);
+        $.ajax({
+            type: 'POST',
+            url: '/backlist.php',
+            data: thisForm.serialize(),   // I WANT TO ADD EXTRA DATA + SERIALIZE DATA
+            success: function(data){
+
+            }
+        });
+    });
 });
