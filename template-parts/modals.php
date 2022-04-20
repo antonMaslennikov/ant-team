@@ -326,14 +326,64 @@
 </div>
 
 <div class="modal-form review-form" id="takeAleksandrAnswer" tabindex="-1" role="dialog" style="display:none;">
-    <div class="modal-title" >Задать вопрос</div>
-    <?php echo do_shortcode('[contact-form-7 id="5912" title="modalTakeAleksandrAnswer"]');?>
-    <div>
-        <br>
-        <div class="form-ctrl">
-            <label class="checkbox">Я ознакомлен и согласен с <a href="/politika-konfidentsialnosti/" data-wpel-link="internal">Политикой в отношении обработки персональных данных</a>
-                <input type="checkbox"><span class="check"><img data-src="/wp-content/themes/ant-team-ru-v2/assets/images/check.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img  data-src='/wp-content/themes/ant-team-ru-v2/assets/images/check.svg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='><noscript><img src="/wp-content/themes/ant-team-ru-v2/assets/images/check.svg"></noscript></span>
-            </label>
-        </div>
+<!--    <div class="modal-title" >Задать вопрос</div>-->
+    <?php /* echo do_shortcode('[contact-form-7 id="5912" title="modalTakeAleksandrAnswer"]');*/ ?>
+
+    <?php $formId = 5912; ?>
+
+    <div role="form" class="wpcf7" id="wpcf7-f<?= $formId ?>-o1" lang="ru-RU" dir="ltr">
+        <form action="/" class="wpcf7-form form init feedback" method="post" data-status="init">
+            <div class="form__success">
+                <h3>Заявка принята</h3>
+                <p>Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.</p>
+            </div>
+            <span class="form__title">Задать вопрос</span>
+            <p>&nbsp;</p>
+
+            <div class="form-ctrl">
+                <input type="text" name="your-name" placeholder="Имя" class="wpcf7-form-control wpcf7-text gtmPriceFormName wpcf7-validates-as-required" required="required">
+            </div>
+
+            <div class="form-ctrl">
+                <textarea name="your-answer" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea gtmPriceFormName" aria-invalid="false" placeholder="Ваш вопрос..."></textarea>
+            </div>
+
+            <div class="form-ctrl">
+                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)">
+            </div>
+
+            <div class="form-ctrl">
+                <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmPriceFormPhone" size="40" aria-required="1" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
+            </div>
+
+            <div>
+                <button class="btn">Отправить</button>
+                <div>
+                    <div class="form-ctrl">
+                        <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
+                            <input type="checkbox" required="required"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wpcf7-response-output" aria-hidden="true"></div>
+
+            <input type="hidden" name="your-check-bot" value="" class="wpcf7-form-control wpcf7-hidden">
+
+            <input type="hidden" name="_wpcf7" value="<?= $formId ?>">
+            <input type="hidden" name="_wpcf7_version" value="5.3.2">
+            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f<?= $formId ?>-o1">
+            <input type="hidden" name="_wpcf7_container_post" value="0">
+            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+        </form>
     </div>
+
+    <?php
+    //    $form = do_shortcode('[contact-form-7 id="10267" html_class="form" title="Заявка на SEO-продвижение сайта от Ant-Team.ru"]');
+    //    $form = preg_replace('/<span class="wpcf7\-form\-control\-wrap .*">(.*)<\/span>/', '$1', $form);
+    //    echo $form
+    ?>
+
 </div>

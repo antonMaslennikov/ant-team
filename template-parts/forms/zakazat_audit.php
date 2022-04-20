@@ -31,7 +31,7 @@
             <div>
                 <div class="form-ctrl">
                     <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
-                        <input type="checkbox"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
+                        <span class="check1"><input type="checkbox" name="policy" required="required"></span>
                     </label>
                 </div>
             </div>

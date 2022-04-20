@@ -59,6 +59,7 @@ $(document).ready(function() {
 
     // todo: forms handler
     $('form.feedback').on('submit', function (e) {
+
         e.preventDefault();
 
         const successBlock = $(this).find('.form__success');
