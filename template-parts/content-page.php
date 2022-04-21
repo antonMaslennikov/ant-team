@@ -22,6 +22,7 @@
                 ?>
             </div><!-- .entry-content -->
         </div>
+        <?php /*
         <div class="article-socials">
             <p>Поделиться с друзьями:</p>
             <ul class="acticle-page-socials__list__inner">
@@ -52,6 +53,7 @@
                 </li>
             </ul>
         </div>
+        */ ?>
     </div>
 
 <!-- #post-<?php the_ID(); ?> -->
