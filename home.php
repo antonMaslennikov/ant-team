@@ -29,7 +29,7 @@ get_header();
             <div class="col-12">
                 <section class="page__subheader">
                     <section class="page__search">
-                        <form class="blog-search__form" id="blog-search-form" action="" method="get">
+                        <form class="blog-search__form" id="blog-search-form" action="/blog/" method="get">
                             <div class="form-ctrl blog-search__input">
                                 <input type="text" name="s" placeholder="Поиск" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
                                 <button type="submit"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7066 13.29L12.7466 10.33C13.5266 9.25 13.9966 7.93 13.9966 6.5C13.9966 2.91 11.0866 0 7.49658 0C3.90658 0 0.996582 2.91 0.996582 6.5C0.996582 10.09 3.90658 13 7.49658 13C8.92658 13 10.2466 12.53 11.3266 11.74L14.2866 14.7C14.4666 14.89 14.7166 15 14.9966 15C15.5466 15 15.9966 14.55 15.9966 14C15.9966 13.72 15.8866 13.47 15.7066 13.29ZM2.99658 6.5C2.99658 4.01 5.00658 2 7.49658 2C9.98658 2 11.9966 4.01 11.9966 6.5C11.9966 8.99 9.98658 11 7.49658 11C5.00658 11 2.99658 8.99 2.99658 6.5Z" fill="#A9A5A0"/></svg></button>
