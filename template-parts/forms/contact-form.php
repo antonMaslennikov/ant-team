@@ -17,7 +17,7 @@
             <label>Телефон</label>
         </div>
         <div class="form-ctrl">
-            <input type="text" name="your-site" placeholder="Сайт (www.site.ru)" required class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required  wpcf7-validates-as-url gtmPriceFormUrl">
+            <input type="url" name="your-site" placeholder="Сайт (www.site.ru)" required class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-required  wpcf7-validates-as-url gtmPriceFormUrl">
             <label>Адрес сайта</label>
         </div>
 
