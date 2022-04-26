@@ -31,7 +31,7 @@
             <div>
                 <div class="form-ctrl">
                     <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
-                        <span class="check1"><input type="checkbox" name="policy" required="required"></span>
+                        <span class="check"><input type="checkbox" name="policy" required="required"></span>
                     </label>
                 </div>
             </div>

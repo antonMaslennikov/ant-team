@@ -209,7 +209,7 @@ get_header();
                                                         <div>
                                                             <div class="form-ctrl">
                                                                 <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
-                                                                    <input type="checkbox"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
+                                                                    <input type="checkbox" name="policy" required="required"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
                                                                 </label>
                                                             </div>
                                                         </div>
@@ -308,7 +308,7 @@ get_header();
 
                                         <div class="content__item">
                                             <div role="form" class="wpcf7" id="wpcf7-f<?= $formId ?>-o1" lang="ru-RU" dir="ltr">
-                                                <form action="/#wpcf7-f<?= $formId ?>-o1" method="post" class="wpcf7-form init form subscribe-form" novalidate="novalidate" data-status="init">
+                                                <form action="/#wpcf7-f<?= $formId ?>-o1" method="post" class="wpcf7-form init form subscribe-form" data-status="init">
                                                     <div class="form__success">
                                                         <h3>Заявка принята</h3>
                                                         <p>Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.</p>
@@ -322,11 +322,11 @@ get_header();
                                                         <label>Имя</label>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required gtmPriceFormPhone" size="40" aria-required="1" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
+                                                        <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required gtmPriceFormPhone" size="40" aria-required="1" required="required" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
                                                         <label>Телефон</label>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url gtmPriceFormUrl" aria-invalid="false" placeholder="Сайт (www.site.ru)">
+                                                        <input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url gtmPriceFormUrl" required="required" aria-invalid="false" placeholder="Сайт (www.site.ru)">
                                                         <label>Адрес сайта</label>
                                                     </div>
                                                     <div>
@@ -334,7 +334,7 @@ get_header();
                                                         <div>
                                                             <div class="form-ctrl">
                                                                 <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
-                                                                    <input type="checkbox"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
+                                                                    <input type="checkbox" name="policy" required="required"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
                                                                 </label>
                                                             </div>
                                                         </div>
