@@ -19,7 +19,7 @@
             <label>Имя</label>
         </div>
         <div class="form-ctrl">
-            <input type="text"  name="your-email" required>
+            <input type="email"  name="your-email" required>
             <label>E-mail*</label>
         </div>
         <div class="form-ctrl">
