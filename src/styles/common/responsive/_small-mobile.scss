@@ -10,3 +10,9 @@
 .modal-form {
   max-width: 100%;
 }
+
+.review {
+  &__graph {
+    display: none;
+  }
+}
