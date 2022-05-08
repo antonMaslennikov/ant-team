@@ -324,3 +324,9 @@ ul.twoColumns {
 .modal-form {
   max-width: 500px;
 }
+
+.review {
+  &__graph {
+    display: none;
+  }
+}

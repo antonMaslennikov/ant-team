@@ -3699,6 +3699,10 @@ body {
   .modal-form {
     max-width: 100%;
   }
+
+  .review__graph {
+    display: none;
+  }
 }
 @media screen and (min-width: 560px) {
   .search__btn-text-2 {
@@ -3977,6 +3981,10 @@ body {
 
   .modal-form {
     max-width: 500px;
+  }
+
+  .review__graph {
+    display: none;
   }
 }
 @media screen and (min-width: 900px) {
@@ -4281,6 +4289,10 @@ body {
   .dual-md {
     display: flex;
   }
+
+  .review__graph {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .search {
@@ -4398,6 +4410,7 @@ body {
   }
   .review__graph {
     width: 75%;
+    display: block;
   }
 
   .dual {
@@ -4725,6 +4738,7 @@ body {
   }
   .review__graph {
     width: 65%;
+    display: block;
   }
 
   .advantages {
