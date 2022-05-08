@@ -42,19 +42,19 @@
                 <div class="score">
                     <div class="score__label">Оценка</div>
                     <label>
-                        <input type="radio" name="score" value="1"><span>1</span>
+                        <input type="radio" name="score" required="required" value="1"><span>1</span>
                     </label>
                     <label>
-                        <input type="radio" name="score" value="2"><span>2</span>
+                        <input type="radio" name="score" required="required" value="2"><span>2</span>
                     </label>
                     <label>
-                        <input type="radio" name="score" value="3"><span>3</span>
+                        <input type="radio" name="score" required="required" value="3"><span>3</span>
                     </label>
                     <label>
-                        <input type="radio" name="score" value="4"><span>4</span>
+                        <input type="radio" name="score" required="required" value="4"><span>4</span>
                     </label>
                     <label>
-                        <input type="radio" name="score" value="5"><span>5</span>
+                        <input type="radio" name="score" required="required" value="5"><span>5</span>
                     </label>
                 </div>
             </div>
