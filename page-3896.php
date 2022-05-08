@@ -195,49 +195,25 @@ get_header();
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Квалификация</div>
-                                    <div class="benefit__desc">Над проектом одновременно работают специалисты разного уровня</div>
+                                    <div class="benefit__title">Подход</div>
+                                    <div class="benefit__desc">Проводим тщательную проверку в ручном и автоматическом режиме именно тех факторов, которые актуальны в вашей тематике</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Опыт</div>
-                                    <div class="benefit__desc">Более 11 лет успешной работы в SEO</div>
+                                    <div class="benefit__title">Экспертность</div>
+                                    <div class="benefit__desc">Точно знаем, что именно нужно анализировать, и ничего не пропустим</div>
                                 </div>
                             </div>
                             <div class="why__item">
+                                <div class="benefit">
+                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                    <div class="benefit__title">Планирование</div>
+                                    <div class="benefit__desc">Составим для вас подробную инструкцию для создания успешного сайта с нуля</div>
+                                </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                     <div class="benefit__title">Прозрачность</div>
-                                    <div class="benefit__desc">Доступ к CRM, подробные отчёты и обратная связь</div>
-                                </div>
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Без рисков</div>
-                                    <div class="benefit__desc">Все действия заранее продумываются, чтобы исключить вероятность попадания под фильтр</div>
-                                </div>
-                            </div>
-                            <div class="why__item">
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Квалификация</div>
-                                    <div class="benefit__desc">Над проектом одновременно работают специалисты разного уровня</div>
-                                </div>
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Опыт</div>
-                                    <div class="benefit__desc">Более 11 лет успешной работы в SEO</div>
-                                </div>
-                            </div>
-                            <div class="why__item">
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Квалификация</div>
-                                    <div class="benefit__desc">Над проектом одновременно работают специалисты разного уровня</div>
-                                </div>
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Опыт</div>
-                                    <div class="benefit__desc">Более 11 лет успешной работы в SEO</div>
+                                    <div class="benefit__desc">Детально расскажем рекомендации по итогам работы и ответим на все ваши вопросы простым языком</div>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +229,37 @@ get_header();
         </div>
     </div>
 </section>
-
+<section class="results" id="sec-results">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="results__wrapper">
+                    <div class="results__header">
+                        <h2>Результаты наших клиентов</h2>
+                    </div>
+                    <div class="results__content">
+                        <div class="results__nav">
+                            <ul>
+                                <li class="active">Клиент 1</li>
+                            </ul>
+                        </div>
+                        <div class="results__slider">
+                            <div class="results__item">
+                                <ul>
+                                    <li>Задача: подготовить полную информацию для создания нового интернет-магазина с нуля</li>
+									<li>Провели аудит коммерческих факторов 5 крупных конкурентов</li>
+									<li>Составили подробный отчет из 13 разделове</li>
+									<li>Создали сайт по результатам аудита КФ и прочим требованиям SEO</li>
+									<li>Трафик на сайт с нуля постоянно растет и через 2 года сайт уже получает более 17 000 посещений в месяц</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_template_part('template-parts/tariffs') ?>
 

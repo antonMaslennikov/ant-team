@@ -80,9 +80,8 @@ get_header();
                                     </div>
                                     <div class="review__text">Эффект от сотрудничества с Ант-тим мы ощутили в звонках. Уже через несколько месяцев после начала работы количество звонков увеличилось почти в 2 раза. Результатами мы довольны и продолжаем работать.</div>
                                     <div class="review__author"><b>Игорь Балабан</b><span>руководитель компании</span></div>
-                                    <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                 </div>
-                                <div class="review__graph"><img src="/wp-content/uploads/2022/04/av.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -97,9 +96,8 @@ get_header();
                                     </div>
                                     <div class="review__text">Прошлым нашим сайтом занималась другая компания и заявок не было вообще. Начали работать с Анттим - запустили сайт с нуля. И за несколько месяцев уже пошли заявки. Сотрудничеством с ребятами полностью довольны, останавливаться не собираемся.</div>
                                     <div class="review__author"><b>Бирюлев Павел</b><span>директор компании</span></div>
-                                    <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                 </div>
-                                <div class="review__graph"><img src="/wp-content/uploads/2022/04/rik.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -114,9 +112,8 @@ get_header();
                                     </div>
                                     <div class="review__text">Александра знаю давно, но работать с ним начали совсем недавно. Уже выводимся в топе по гораздо большему количеству ключевых фраз, заметно увеличились посещения на сайте. Про команду могу сказать только хорошее – работают профессионально, дело свое знают, всегда быстро откликаются на все наши вопросы и проблемы.</div>
                                     <div class="review__author"><b>Туркин Александр</b><span>директор компании</span></div>
-                                    <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                 </div>
-                                <div class="review__graph"><img src="/wp-content/uploads/2022/04/nw.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
                             </div>
                         </div>
                     </div>
