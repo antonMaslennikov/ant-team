@@ -64,7 +64,7 @@ get_header();
                             <div class="reviews__dots slick-slider-numbers hidden-xs display-flex-lg"></div><?php /* <a class="link link--more" href="#">все отзывы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a> */ ?>
                         </div>
                         <div class="reviews__average hidden-xs display-flex-md">
-                            <div>Средний рейтинг: 5 из 5 (3 отзыва)<a class="btn btn-small" data-fancybox href="#modal-review-form">Оставить отзыв</a></div>
+                            <div>Средний рейтинг: 5 из 5 (3 отзыва)<a class="btn btn-small" data-fancybox data-touch="false" href="#modal-review-form">Оставить отзыв</a></div>
                         </div>
                     </div>
                     <div class="reviews__slider">

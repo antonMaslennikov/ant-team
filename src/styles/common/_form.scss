@@ -315,7 +315,9 @@
     color: $darkgrey;
   }
   & input {
-    display: none;
+    //display: none;
+    position: absolute;
+    opacity: 0;
   }
   & label {
     margin: 0 20px 0 0;
