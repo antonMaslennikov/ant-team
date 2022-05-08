@@ -345,15 +345,15 @@
             </div>
 
             <div class="form-ctrl">
-                <textarea name="your-answer" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea gtmPriceFormName" aria-invalid="false" placeholder="Ваш вопрос..."></textarea>
+                <textarea name="your-answer" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea gtmPriceFormName wpcf7-validates-as-required" aria-invalid="false" placeholder="Ваш вопрос..." required="required"></textarea>
             </div>
 
             <div class="form-ctrl">
-                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)">
+                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail" aria-required="true" aria-invalid="false" placeholder="Почта (your@site.ru)" required="required">
             </div>
 
             <div class="form-ctrl">
-                <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmPriceFormPhone" size="40" aria-required="1" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
+                <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask gtmPriceFormPhone wpcf7-validates-as-required" size="40" aria-required="1" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__" required="required">
             </div>
 
             <div>
