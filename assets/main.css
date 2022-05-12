@@ -3301,7 +3301,6 @@ body {
     list-style-image: url(images/bl-list.svg);
   }
   .article__content figure {
-    margin: 30px -20px;
     padding: 0;
   }
   .article__content figure figcaption {
