@@ -1889,8 +1889,8 @@ footer {
       list-style-image: url('/src/assets/icons/bl-list.svg');
     }
     & figure {
-      margin: 30px -20px;
       padding: 0;
+      margin: 0 0 1rem;
       & figcaption {
         color: $gray;
         font-size: 14px;

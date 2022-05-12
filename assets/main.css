@@ -3301,8 +3301,8 @@ body {
     list-style-image: url(images/bl-list.svg);
   }
   .article__content figure {
-    margin: 30px -20px;
     padding: 0;
+    margin: 0 0 1rem;
   }
   .article__content figure figcaption {
     color: #A9A5A0;
