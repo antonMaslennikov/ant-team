@@ -408,6 +408,11 @@ $(document).ready(function() {
         ],
     })
 
+    $('.results__slider').on('swipe', function(event, slick, direction){
+        $('.results__nav li').removeClass('active');
+        $('.results__nav li').eq(slick.currentSlide).addClass('active');
+    });
+
     $('.results__nav li').click(function() {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
