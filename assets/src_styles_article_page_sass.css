@@ -499,17 +499,12 @@ cite {
   font-weight: 600;
 }
 
-.wp-block-table.googleSheet {
-  overflow-x: unset;
-}
-
 .googleSheet {
   margin-bottom: 20px;
   border-collapse: collapse;
 }
 .googleSheet table {
   border-collapse: collapse;
-  overflow-x: unset;
 }
 
 .googleSheet th {

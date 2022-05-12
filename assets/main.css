@@ -3302,6 +3302,7 @@ body {
   }
   .article__content figure {
     padding: 0;
+    margin: 0 0 1rem;
   }
   .article__content figure figcaption {
     color: #A9A5A0;
