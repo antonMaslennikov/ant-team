@@ -499,6 +499,12 @@ cite {
   font-weight: 600;
 }
 
+table.googleSheet {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+}
+
 .googleSheet {
   margin-bottom: 20px;
   border-collapse: collapse;
