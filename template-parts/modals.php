@@ -35,7 +35,7 @@
                 <label>Ссылка на проект*</label>
             </div>
             <div class="form-ctrl">
-                <textarea  name="your-review"></textarea>
+                <textarea name="your-review" required="required"></textarea>
                 <label>Отзыв*</label>
             </div>
             <div class="form-ctrl">
