@@ -151,7 +151,7 @@ function ant_team_ru_scripts()
 //    }
 
 //    wp_enqueue_style('ant-team-ru-datepicker', get_template_directory_uri() . '/assets/libs/airdatepicker/datepicker.min.css');
-    wp_enqueue_style('ant-team-ru-main', get_template_directory_uri() . '/assets/main.css', array(), '2.0.0');
+    wp_enqueue_style('ant-team-ru-main', get_template_directory_uri() . '/assets/main.css', array(), '2.0.1');
 //    wp_enqueue_style('ant-team-ru-style', get_stylesheet_uri(),array(),'1.0.0');
 
     /**
@@ -172,7 +172,7 @@ function ant_team_ru_scripts()
 //    wp_enqueue_script('ant-team-ru-maskedinput', get_template_directory_uri() . '/assets/libs/maskedinput/maskedinput.js', array(), '20151215', true);
 //    wp_enqueue_script('ant-team-ru-jQueryFormStyler', get_template_directory_uri() . '/assets/libs/jQueryFormStyler/jquery.formstyler.min.js', array(), '20151215', true);
 
-    wp_enqueue_script('ant-team-ru-main', get_template_directory_uri() . '/assets/main.js', array(), '20220408', true);
+    wp_enqueue_script('ant-team-ru-main', get_template_directory_uri() . '/assets/main.js', array(), '20220517', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

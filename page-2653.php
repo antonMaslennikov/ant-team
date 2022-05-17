@@ -302,7 +302,7 @@ get_header();
 									<li>Внедрен поиск по сайту и размечен микроразметкой</li>
 									<li>Проведена работа со ссылочным</li>
 								</ul>
-                                <div class="results__more"><a class="link" href="">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
+                                <div class="results__more"><a class="link" href="#">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
                             </div>
                             <div class="results__item">
 <ul>
@@ -331,7 +331,7 @@ get_header();
 <li>Заполнены alt у изображений</li>
 <li>Сделан поиск по сайту и размечен микроразметкой</li>
 </ul>
-                                <div class="results__more"><a class="link" href="">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
+                                <div class="results__more"><a class="link" href="#">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
                             </div>
                             <div class="results__item">
 <ul>
@@ -355,7 +355,7 @@ get_header();
 <li>Закрыты исходящие ссылки в nofollow</li>
 <li>Разработаны и настроены цели</li>
 </ul>
-                                <div class="results__more"><a class="link" href="">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
+                                <div class="results__more"><a class="link" href="#">Показать все<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></a></div>
                             </div>
                         </div>
                     </div>

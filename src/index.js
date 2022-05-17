@@ -530,6 +530,13 @@ $(document).ready(function() {
         $('.mobile-menu').hide();
         $('html').removeClass('scroll-lock');
     });
+
+    $('.results__more').on('click', function () {
+        $(this).prev('ul').addClass('-toogled');
+        $(this).remove();
+        return false;
+    });
+
 })
 
 
