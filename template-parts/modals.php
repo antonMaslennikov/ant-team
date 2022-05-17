@@ -23,15 +23,15 @@
                 <p>Нам важно ваше мнение о нашей работе. Будем благодарны за любую обратную связь.</p>
             </div>
             <div class="form-ctrl">
-                <input type="text"  name="your-name" required="required">
+                <input type="text" name="your-name" required="required">
                 <label>Имя*</label>
             </div>
             <div class="form-ctrl">
-                <input type="text"  name="your-project-name" required="required">
+                <input type="text" name="your-project-name" required="required">
                 <label>Название проекта*</label>
             </div>
             <div class="form-ctrl">
-                <input type="text"  name="your-project-link" required="required">
+                <input type="text" name="your-project-link" required="required">
                 <label>Ссылка на проект*</label>
             </div>
             <div class="form-ctrl">

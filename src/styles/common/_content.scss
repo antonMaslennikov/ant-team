@@ -1650,6 +1650,9 @@ footer {
         }
       }
     }
+    & ul.-toogled {
+      height: auto;
+    }
   }
   &__more {
     display: flex;
