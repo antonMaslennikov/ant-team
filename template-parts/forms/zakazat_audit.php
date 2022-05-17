@@ -15,7 +15,7 @@
         </span>
         <p class="form__desc">Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
         <div class="form-ctrl">
-            <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName">
+            <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName" required>
             <label>Имя</label>
         </div>
         <div class="form-ctrl">
@@ -31,7 +31,8 @@
             <div>
                 <div class="form-ctrl">
                     <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
-                        <span class="check"><input type="checkbox" name="policy" required="required"></span>
+                        <input type="checkbox" name="policy" required="required">
+                        <span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
                     </label>
                 </div>
             </div>
