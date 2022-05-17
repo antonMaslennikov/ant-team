@@ -406,14 +406,14 @@ $(document).ready(function() {
         mobileFirst: true,
         responsive: [
         ],
-    })
+    });
 
     $('.results__slider').on('swipe', function(event, slick, direction){
         $('.results__nav li').removeClass('active');
         $('.results__nav li').eq(slick.currentSlide).addClass('active');
     });
 
-    $('.results__nav li').click(function() {
+    $(document).on('click', '.results__nav li', function() {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
         $('.results__slider').slick('slickGoTo', $(this).index());
@@ -531,9 +531,18 @@ $(document).ready(function() {
         $('html').removeClass('scroll-lock');
     });
 
-    $('.results__more').on('click', function () {
+    $(document).on('click', '.results__more', function () {
         $(this).prev('ul').addClass('-toogled');
         $(this).remove();
+        $('.results__slider').slick('unslick');
+        $('.results__slider').slick({
+            arrows: false,
+            dots: false,
+            adaptiveHeight: true,
+            mobileFirst: true,
+            responsive: [
+            ],
+        });
         return false;
     });
 
