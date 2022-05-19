@@ -52,79 +52,47 @@ get_header();
         </div>
     </div>
 </section>
-<!-- reviews-->
-<section class="reviews" id="reviews">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="reviews__wrapper">
-                    <div class="reviews__header">
-                        <div class="section__header">
-                            <h2>Отзывы</h2>
-                            <div class="reviews__dots slick-slider-numbers hidden-xs display-flex-lg"></div><?php /* <a class="link link--more" href="#">все отзывы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a> */ ?>
-                        </div>
-                        <div class="reviews__average hidden-xs display-flex-md">
-                            <div>Средний рейтинг: 5 из 5 (3 отзыва)<a class="btn btn-small" data-fancybox data-touch="false" href="#modal-review-form">Оставить отзыв</a></div>
-                        </div>
-                    </div>
-                    <div class="reviews__slider">
-                        <div class="reviews__item">
-                            <div class="review">
-                                <div class="review__comment">
-                                    <h3 class="review__title">Avrora-Medi.ru</h3>
-                                    <div class="review__rating">
-                                        <div class="rating">
-                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
-                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text">Эффект от сотрудничества с Ант-тим мы ощутили в звонках. Уже через несколько месяцев после начала работы количество звонков увеличилось почти в 2 раза. Результатами мы довольны и продолжаем работать.</div>
-                                    <div class="review__author"><b>Игорь Балабан</b><span>руководитель компании</span></div>
-                                </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
+
+<?php
+$args = [
+    'posts_per_page' => 12,
+    'meta_query' => [
+        [
+            'key' => 'format',
+            'value' => 'case',
+        ],
+    ]
+];
+
+$cases = get_posts($args);
+?>
+
+<?php if (count($cases) > 0): ?>
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cases__wrapper">
+                        <div class="cases__header">
+                            <div class="section__header">
+                                <h2>Кейсы</h2>
+                                <div class="cases__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                                <a class="link link--more" href="/blog/?format=case">все кейсы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
                             </div>
                         </div>
-                        <div class="reviews__item">
-                            <div class="review">
-                                <div class="review__comment">
-                                    <h3 class="review__title">Rikkir-sport.ru</h3>
-                                    <div class="review__rating">
-                                        <div class="rating">
-                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
-                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text">Прошлым нашим сайтом занималась другая компания и заявок не было вообще. Начали работать с Анттим - запустили сайт с нуля. И за несколько месяцев уже пошли заявки. Сотрудничеством с ребятами полностью довольны, останавливаться не собираемся.</div>
-                                    <div class="review__author"><b>Бирюлев Павел</b><span>директор компании</span></div>
-                                </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
-                            </div>
+                        <div class="cases__slider">
+                            <?php foreach($cases as $post ): ?>
+                                <?php setup_postdata($post); ?>
+                                <?php get_template_part('template-parts/content'); ?>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="reviews__item">
-                            <div class="review">
-                                <div class="review__comment">
-                                    <h3 class="review__title">Nwflues.ru</h3>
-                                    <div class="review__rating">
-                                        <div class="rating">
-                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
-                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="review__text">Александра знаю давно, но работать с ним начали совсем недавно. Уже выводимся в топе по гораздо большему количеству ключевых фраз, заметно увеличились посещения на сайте. Про команду могу сказать только хорошее – работают профессионально, дело свое знают, всегда быстро откликаются на все наши вопросы и проблемы.</div>
-                                    <div class="review__author"><b>Туркин Александр</b><span>директор компании</span></div>
-                                </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reviews__average hidden-md">
-                        <div>Средний рейтинг: 5 из 5 (3 отзыва)</div><a class="btn btn-small">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
+
 <!-- promote top-->
 <section class="promote-top" id="promote-top">
     <div class="container">
@@ -646,45 +614,83 @@ get_header();
     </div>
 </section>
 
-<?php
-    $args = [
-        'posts_per_page' => 12,
-        'meta_query' => [
-            [
-                'key' => 'format',
-                'value' => 'case',
-            ],
-        ]
-    ];
 
-    $cases = get_posts($args);
-?>
-
-<?php if (count($cases) > 0): ?>
-    <section class="cases" id="cases">
+    <!-- reviews-->
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="cases__wrapper">
-                        <div class="cases__header">
+                    <div class="reviews__wrapper">
+                        <div class="reviews__header">
                             <div class="section__header">
-                                <h2>Кейсы</h2>
-                                <div class="cases__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
-                                <a class="link link--more" href="/blog/?format=case">все кейсы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
+                                <h2>Отзывы</h2>
+                                <div class="reviews__dots slick-slider-numbers hidden-xs display-flex-lg"></div><?php /* <a class="link link--more" href="#">все отзывы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a> */ ?>
+                            </div>
+                            <div class="reviews__average hidden-xs display-flex-md">
+                                <div>Средний рейтинг: 5 из 5 (3 отзыва)<a class="btn btn-small" data-fancybox data-touch="false" href="#modal-review-form">Оставить отзыв</a></div>
                             </div>
                         </div>
-                        <div class="cases__slider">
-                            <?php foreach($cases as $post ): ?>
-                                <?php setup_postdata($post); ?>
-                                <?php get_template_part('template-parts/content'); ?>
-                            <?php endforeach; ?>
+                        <div class="reviews__slider">
+                            <div class="reviews__item">
+                                <div class="review">
+                                    <div class="review__comment">
+                                        <h3 class="review__title">Avrora-Medi.ru</h3>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                                <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review__text">Эффект от сотрудничества с Ант-тим мы ощутили в звонках. Уже через несколько месяцев после начала работы количество звонков увеличилось почти в 2 раза. Результатами мы довольны и продолжаем работать.</div>
+                                        <div class="review__author"><b>Игорь Балабан</b><span>руководитель компании</span></div>
+                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
+                                    </div>
+                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/av.png"></div>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="review">
+                                    <div class="review__comment">
+                                        <h3 class="review__title">Rikkir-sport.ru</h3>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                                <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review__text">Прошлым нашим сайтом занималась другая компания и заявок не было вообще. Начали работать с Анттим - запустили сайт с нуля. И за несколько месяцев уже пошли заявки. Сотрудничеством с ребятами полностью довольны, останавливаться не собираемся.</div>
+                                        <div class="review__author"><b>Бирюлев Павел</b><span>директор компании</span></div>
+                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
+                                    </div>
+                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/rik.png"></div>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="review">
+                                    <div class="review__comment">
+                                        <h3 class="review__title">Nwflues.ru</h3>
+                                        <div class="review__rating">
+                                            <div class="rating">
+                                                <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                                <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="review__text">Александра знаю давно, но работать с ним начали совсем недавно. Уже выводимся в топе по гораздо большему количеству ключевых фраз, заметно увеличились посещения на сайте. Про команду могу сказать только хорошее – работают профессионально, дело свое знают, всегда быстро откликаются на все наши вопросы и проблемы.</div>
+                                        <div class="review__author"><b>Туркин Александр</b><span>директор компании</span></div>
+                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
+                                    </div>
+                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/nw.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__average hidden-md">
+                            <div>Средний рейтинг: 5 из 5 (3 отзыва)</div><a class="btn btn-small">Оставить отзыв</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<?php endif; ?>
 
 <?php
 $args = [
