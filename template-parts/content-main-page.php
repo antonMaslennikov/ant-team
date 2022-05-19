@@ -34,7 +34,7 @@ get_header();
             <div class="col-12">
                 <div class="navigation__wrapper">
                     <ul class="navigation__list">
-                        <li class="navigation__item active"><a class="navigation__link link scrollto" href="#reviews">Отзывы</a></li>
+                        <li class="navigation__item active"><a class="navigation__link link scrollto" href="#cases">Кейсы</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#promote-top">Топ Яндекс и Google</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#employees">Команда</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#advantages">Преимущества</a></li>
@@ -43,7 +43,7 @@ get_header();
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#sec-tariffs">Тарифы</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#how-we-work">Как мы работаем</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#faq">FAQ</a></li>
-                        <li class="navigation__item"><a class="navigation__link link scrollto" href="#cases">Кейсы</a></li>
+                        <li class="navigation__item"><a class="navigation__link link scrollto" href="#reviews">Отзывы</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#articles">Статьи</a></li>
                         <li class="navigation__item"><a class="navigation__link link scrollto" href="#conferences">Конференции</a></li>
                     </ul>
