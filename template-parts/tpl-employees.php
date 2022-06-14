@@ -37,21 +37,17 @@ get_header();
     */
 ?>
 
-    <section class="page__header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Команда Ant-Team.ru</h1>
-                    <div class="employees__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="employees__wrapper">
+                    <div class="employees__header">
+                        <div class="section__header">
+                            <h1>Команда Ant-Team.ru</h1>
+                            <div class="employees__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                        </div>
+                    </div>
                     <div class="employees__slider">
                         <?php if (have_posts()): ?>
                             <?php foreach ($employees AS $e): ?>
