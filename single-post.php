@@ -102,7 +102,7 @@ $meta = get_post_meta($post->ID);
                                                     <h3>Остались вопросы или хотите заказать продвижение?</h3>
                                                 </div>
                                                 <div class="form-ctrl">
-                                                    <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName">
+                                                    <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName wpcf7-validates-as-required" aria-required="1" required>
                                                     <label>Имя</label>
                                                 </div>
                                                 <div class="form-ctrl">
@@ -153,7 +153,7 @@ $meta = get_post_meta($post->ID);
                                                     <p>Мы будем отправлять вам письма с самыми интересными и полезными статьями 2 раза в месяц.</p>
                                                 </div>
                                                 <div class="form-ctrl">
-                                                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text gtmPriceFormName" aria-invalid="false" placeholder="Имя (Александр)">
+                                                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text gtmPriceFormName wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Имя (Александр)" required>
                                                     <label>Имя</label>
                                                 </div>
                                                 <div class="form-ctrl">
@@ -513,7 +513,7 @@ $meta = get_post_meta($post->ID);
             <span class="form__title">Отправить статью на почту</span>
             <p class="form__desc"></p>
             <div class="form-ctrl">
-                <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName">
+                <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName  wpcf7-validates-as-required" aria-required="true" required>
                 <label>Имя</label>
             </div>
             <div class="form-ctrl">
