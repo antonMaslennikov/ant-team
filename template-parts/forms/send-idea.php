@@ -15,8 +15,8 @@
             <label>Тема статьи*</label>
         </div>
         <div class="form-ctrl">
-            <input type="text"  name="your-name">
-            <label>Имя</label>
+            <input type="text"  name="your-name" required>
+            <label>Имя*</label>
         </div>
         <div class="form-ctrl">
             <input type="email"  name="your-email" required>

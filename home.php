@@ -197,7 +197,7 @@ get_header();
                                                         <p>Мы будем отправлять вам письма с самыми интересными и полезными статьями 2 раза в месяц.</p>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text gtmPriceFormName" aria-invalid="false" placeholder="Имя (Александр)">
+                                                        <input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text gtmPriceFormName wpcf7-validates-as-required" aria-invalid="false" placeholder="Имя (Александр)" aria-required="true" required>
                                                         <label>Имя</label>
                                                     </div>
                                                     <div class="form-ctrl">
