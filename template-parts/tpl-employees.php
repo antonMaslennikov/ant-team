@@ -45,6 +45,7 @@ get_header();
                     <div class="employees__header">
                         <div class="section__header">
                             <h1>Команда Ant-Team.ru</h1>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <div class="employees__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                         </div>
                     </div>
