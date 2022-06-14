@@ -357,7 +357,7 @@ foreach($pageMeta AS $key => $value) {
                         <div class="facts__wrapper">
                             <div class="facts__content">
                                 <div class="facts__header">
-                                    <h2>Факты об <?= $eMeta['name_predl'][0] ?></h2>
+                                    <h2>Факты <?php if (in_array(mb_strtolower(mb_substr($eMeta['name_predl'][0], 0, 1)), ['а', 'о', 'у', 'э', 'и'])): ?>об<?php else: ?>о<?php endif; ?> <?= $eMeta['name_predl'][0] ?></h2>
                                 </div>
                                 <div class="facts__list">
                                     <?php foreach ($pageMeta['facts'] AS $f): ?>
