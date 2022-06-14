@@ -318,15 +318,15 @@ get_header();
                                                         <p>Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text gtmPriceFormName" aria-invalid="false" placeholder="Имя (Александр)">
+                                                        <input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text gtmPriceFormName" aria-invalid="false" placeholder="Имя (Александр)">
                                                         <label>Имя</label>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required gtmPriceFormPhone" size="40" aria-required="1" required="required" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
+                                                        <input type="tel" name="your-phone" value="" class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required gtmPriceFormPhone" aria-required="1" required="required" placeholder="+7 (___) ___-__-__" data-mask="+7 (___) ___-__-__">
                                                         <label>Телефон</label>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="url" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url gtmPriceFormUrl" required="required" aria-invalid="false" placeholder="Сайт (www.site.ru)">
+                                                        <input type="url" name="your-site" value="" class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url gtmPriceFormUrl" required="required" aria-invalid="false" placeholder="Сайт (www.site.ru)">
                                                         <label>Адрес сайта</label>
                                                     </div>
                                                     <div>
