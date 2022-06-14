@@ -42,6 +42,7 @@ get_header();
             <div class="row">
                 <div class="col-12">
                     <h1>Команда Ant-Team.ru</h1>
+                    <div class="employees__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                 </div>
             </div>
         </div>
