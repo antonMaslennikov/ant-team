@@ -522,7 +522,7 @@ $meta = get_post_meta($post->ID);
         <form action="/" class="wpcf7-form form init feedback" method="post" data-status="init">
             <div class="form__success">
                 <h3>Заявка принята</h3>
-                <p>Мы отправим вами статью на почту в ближайшее время.</p>
+                <p>Мы отправим вам статью на почту в ближайшее время.</p>
             </div>
             <span class="form__title">Отправить статью на почту</span>
             <p class="form__desc"></p>
