@@ -49,6 +49,9 @@ get_header();
                             <div class="employees__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                         </div>
                     </div>
+
+                    <?php the_content() ?>
+
                     <div class="employees__slider">
                         <?php if (have_posts()): ?>
                             <?php foreach ($employees AS $e): ?>
@@ -84,6 +87,8 @@ get_header();
 
                     </div>
                     <?php endif; ?>
+
+
                 </div>
             </div>
         </div>
