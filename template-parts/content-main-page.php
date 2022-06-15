@@ -222,7 +222,7 @@ $cases = get_posts($args);
                                 <div class="advantages__item">
                                     <div class="advantage">
                                         <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                        <div class="advantage__desc">Более 10 лет выводим сайты в топ Яндекс и Google</div>
+                                        <div class="advantage__desc">Более 13 лет выводим сайты в топ Яндекс и Google</div>
                                     </div>
                                     <div class="advantage">
                                         <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
@@ -643,9 +643,8 @@ $cases = get_posts($args);
                                         </div>
                                         <div class="review__text">Эффект от сотрудничества с Ант-тим мы ощутили в звонках. Уже через несколько месяцев после начала работы количество звонков увеличилось почти в 2 раза. Результатами мы довольны и продолжаем работать.</div>
                                         <div class="review__author"><b>Игорь Балабан</b><span>руководитель компании</span></div>
-                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                     </div>
-                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/av.png"></div>
+                                    <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
                                 </div>
                             </div>
                             <div class="reviews__item">
@@ -660,9 +659,8 @@ $cases = get_posts($args);
                                         </div>
                                         <div class="review__text">Прошлым нашим сайтом занималась другая компания и заявок не было вообще. Начали работать с Анттим - запустили сайт с нуля. И за несколько месяцев уже пошли заявки. Сотрудничеством с ребятами полностью довольны, останавливаться не собираемся.</div>
                                         <div class="review__author"><b>Бирюлев Павел</b><span>директор компании</span></div>
-                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                     </div>
-                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/rik.png"></div>
+                                    <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
                                 </div>
                             </div>
                             <div class="reviews__item">
@@ -677,9 +675,8 @@ $cases = get_posts($args);
                                         </div>
                                         <div class="review__text">Александра знаю давно, но работать с ним начали совсем недавно. Уже выводимся в топе по гораздо большему количеству ключевых фраз, заметно увеличились посещения на сайте. Про команду могу сказать только хорошее – работают профессионально, дело свое знают, всегда быстро откликаются на все наши вопросы и проблемы.</div>
                                         <div class="review__author"><b>Туркин Александр</b><span>директор компании</span></div>
-                                        <div class="review__social"><a href="#"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/vk.svg"></a></div>
                                     </div>
-                                    <div class="review__graph"><img src="/wp-content/uploads/2022/04/nw.png"></div>
+                                    <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
                                 </div>
                             </div>
                         </div>

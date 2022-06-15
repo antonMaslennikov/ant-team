@@ -10,7 +10,7 @@ get_header();
                     <div class="audit__content">
                         <h1>Аудит коммерческих факторов</h1>
                         <p>Узнайте от каких коммерческих факторов зависят ваши позиции в выдаче</p>
-                        <div class="audit__price"><span>от 10 000 ₽</span></div><a class="link" href="#sec-tariffs">смотреть все тарифы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
+                        <div class="audit__price"><span>от 70 000 ₽</span></div><a class="link" href="#sec-tariffs">смотреть все тарифы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
                     </div>
                     <div class="audit__form">
                         <?php get_template_part('template-parts/forms/contact-form') ?>

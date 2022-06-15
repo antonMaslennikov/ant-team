@@ -218,7 +218,7 @@ get_header();
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                     <div class="benefit__title">Опыт</div>
-                                    <div class="benefit__desc">Более 11 лет успешной работы в SEO</div>
+                                    <div class="benefit__desc">Более 13 лет успешной работы в SEO</div>
                                 </div>
                             </div>
                             <div class="why__item">
