@@ -237,6 +237,7 @@ $(document).ready(function() {
         dots: true,
         adaptiveHeight: true,
         mobileFirst: true,
+        infinite: false,
         responsive: [
             {
                 breakpoint: 559,
