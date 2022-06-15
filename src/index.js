@@ -80,7 +80,7 @@ $(document).ready(function() {
     })
 
     $('.collapsed li').on('click', function (e) {
-        e.preventDefault()
+        // e.preventDefault();
         const subItem = $(this).find('div');
         if (subItem.length > 0) {
             $('.collapsed li.active').each( (i, item) => {
