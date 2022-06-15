@@ -79,7 +79,7 @@ $(document).ready(function() {
         }
     })
 
-    $('.collapsed li').on('click', function (e) {
+    $('.collapsed li:not(.active)').on('click', function (e) {
         e.preventDefault()
         const subItem = $(this).find('div');
         if (subItem.length > 0) {
