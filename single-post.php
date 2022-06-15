@@ -12,6 +12,7 @@ $meta = get_post_meta($post->ID);
 
 ?>
 
+<?php /*
 <section class="article__header">
     <div class="container">
         <div class="row">
@@ -21,6 +22,8 @@ $meta = get_post_meta($post->ID);
         </div>
     </div>
 </section>
+ */
+?>
 
 <section class="article">
     <div class="container">
@@ -28,6 +31,17 @@ $meta = get_post_meta($post->ID);
             <div class="col-12">
                 <div class="article__columns">
                     <div class="article__column1">
+
+                        <section class="article__header">
+                            <div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1><?php echo get_the_title($post->ID); ?></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
                         <div class="article__tags">
                             <ul>
                                 <?php if ($meta['complexity'][0]): ?>
