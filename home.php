@@ -318,7 +318,7 @@ get_header();
                                                         <p>Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
                                                     </div>
                                                     <div class="form-ctrl">
-                                                        <input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text gtmPriceFormName" aria-invalid="false" placeholder="Имя (Александр)">
+                                                        <input type="text" name="your-name" value="" class="wpcf7-form-control wpcf7-text gtmPriceFormName wpcf7-validates-as-required" aria-required="1" required="required" aria-invalid="false" placeholder="Имя (Александр)">
                                                         <label>Имя</label>
                                                     </div>
                                                     <div class="form-ctrl">
