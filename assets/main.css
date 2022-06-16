@@ -2203,6 +2203,9 @@ body {
     font-family: "Montserrat Regular", sans-serif;
     color: #47413B;
   }
+  .dop_service__content.-yml {
+    height: 220px;
+  }
   .dop_service__link {
     position: absolute;
     bottom: 20px;

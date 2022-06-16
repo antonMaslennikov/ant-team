@@ -714,6 +714,9 @@
     font-family: "Montserrat Regular", sans-serif;
     color: $black;
   }
+  &__content.-yml {
+    height: 220px;
+  }
   &__link {
     position: absolute;
     bottom: 20px;

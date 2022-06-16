@@ -265,7 +265,7 @@ get_header();
 
 <?php get_template_part('template-parts/tariffs') ?>
 
-<?php get_template_part('template-parts/dop_services') ?>
+<?php get_template_part('template-parts/dop_services-yml') ?>
 
 <?php
 the_content();
