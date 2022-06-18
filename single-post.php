@@ -512,6 +512,21 @@ $meta = get_post_meta($post->ID);
                         </svg></a></p>
             </div>
         </div>
+
+
+        <?php
+//        if ( ( is_single() || is_page() ) && ( comments_open() || get_comments_number() ) && ! post_password_required() ) {
+//            ?>
+<!---->
+<!--            <div class="comments-wrapper section-inner">-->
+<!---->
+<!--                --><?php //comments_template(); ?>
+<!---->
+<!--            </div><!-- .comments-wrapper -->-->
+<!---->
+<!--            --><?php
+//        }
+        ?>
     </section>
 </section>
 
@@ -559,6 +574,7 @@ $meta = get_post_meta($post->ID);
         </form>
     </div>
 </div>
+
 
 <?php
 get_footer();
