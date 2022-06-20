@@ -9,7 +9,7 @@
         <span class="form__title">Заявка на SEO-продвижение сайта от Ant-Team.ru</span>
         <p class="form__desc">Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
         <div class="form-ctrl">
-            <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName">
+            <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmPriceFormName" aria-required="1" required="required">
             <label>Имя</label>
         </div>
         <div class="form-ctrl">

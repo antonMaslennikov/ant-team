@@ -48,6 +48,43 @@ get_header();
         </div>
     </div>
 </div>
+
+<?php
+$articles = get_posts([
+    'posts_per_page' => 12,
+    'meta_query' => [
+        [
+            'key' => 'format',
+            'value' => 'article',
+        ],
+    ]
+]);
+?>
+
+<?php if (count($articles) > 0): ?>
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="articles__header">
+                        <div class="section__header">
+                            <h2>Статьи</h2>
+                            <div class="articles__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                            <a class="link link--more" href="/blog/?format=article">все статьи<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
+                        </div>
+                    </div>
+                    <div class="articles__slider">
+                        <?php foreach($articles as $post ): ?>
+                            <?php setup_postdata($post); ?>
+                            <?php get_template_part('template-parts/content'); ?>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
 <div class="container not-work-link-container">
     <div class="row">
         <div class="col-12">
@@ -58,7 +95,7 @@ get_header();
         <div class="col-12">
             <div id="modal-confirm-action" class="popup-confirm-action">
                 <h3>Спасибо за сообщение!</h3>
-                <p class="text-popup-modal-confirm">Подтвердите действие на старнице ant-team.ru</p>
+                <p class="text-popup-modal-confirm">Подтвердите действие на странице ant-team.ru</p>
                 <a class="btn btn-small" data-fancybox-close href="javascript:void(0)">ОК</a>
             </div>
         </div>
