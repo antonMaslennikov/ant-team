@@ -88,16 +88,68 @@ $articles = get_posts([
 <div class="container not-work-link-container">
     <div class="row">
         <div class="col-12">
-            <a class="btn btn-small" id="send-not-work-link" data-fancybox="" href="#modal-confirm-action">Сообщить о нерабочей ссылке</a>
+            <a class="btn btn-small"
+               id="send-not-work-link"
+               data-fancybox=""
+               data-touch="false"
+               href="#modal-confirm-action">Сообщить о нерабочей ссылке</a>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <div id="modal-confirm-action" class="popup-confirm-action">
-                <h3>Спасибо за сообщение!</h3>
-                <p class="text-popup-modal-confirm">Подтвердите действие на странице ant-team.ru</p>
-                <a class="btn btn-small" data-fancybox-close href="javascript:void(0)">ОК</a>
+
+            <?php $formId = 12307; ?>
+
+            <div role="form" class="wpcf7 popup-confirm-action" lang="ru-RU" dir="ltr" id="modal-confirm-action">
+                <form action="/" class="wpcf7-form init feedback" method="post" data-status="init">
+                    <div class="form__success">
+                        <h3>Спасибо за сообщение!</h3>
+                    </div>
+                    <div class="form-ctrl">
+                        <h3>Сообщить о нерабочей ссылке</h3>
+                    </div>
+                    <div class="form-ctrl">
+                        <input type="text"  name="your-name" required>
+                        <label>Имя*</label>
+                    </div>
+                    <div class="form-ctrl">
+                        <input type="email"  name="your-email" required>
+                        <label>E-mail*</label>
+                    </div>
+                    <div class="form-ctrl">
+                        <textarea name="your-message" required></textarea>
+                        <label>Сообщение*</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit gtmGetPriceFormSubmit btn">
+                        <div>
+                            <div class="form-ctrl">
+                                <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
+                                    <input type="checkbox" name="policy" required="required"><span class="check"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/check.svg"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+
+                    <input type="hidden" name="your-check-bot" value="" class="wpcf7-form-control wpcf7-hidden">
+
+                    <input type="hidden" name="_wpcf7" value="<?= $formId ?>">
+                    <input type="hidden" name="_wpcf7_version" value="5.3.2">
+                    <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f<?= $formId ?>-o4">
+                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                    <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                </form>
             </div>
+        </div>
+
+<!--            <div id="modal-confirm-action" class="popup-confirm-action">-->
+<!--                <h3>Спасибо за сообщение!</h3>-->
+<!--                <p class="text-popup-modal-confirm">Подтвердите действие на странице ant-team.ru</p>-->
+<!--                <a class="btn btn-small" data-fancybox-close href="javascript:void(0)">ОК</a>-->
+<!--            </div>-->
         </div>
     </div>
 </div>
