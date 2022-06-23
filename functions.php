@@ -606,4 +606,5 @@ $POST_FORMATS = array(
     'patent' => 'Патент',
     'test' => 'Тест',
     'interview' => 'Интервью',
+    'video' => 'Видео',
 ) ;
