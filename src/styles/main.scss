@@ -403,6 +403,27 @@ body {
     padding: 10px 20px;
   }
 }
+
+@media screen and (min-width: 1200px){
+  .certificates__slider {
+    display: flex;
+    align-items: flex-end;
+  }
+  .certificates__slider .prev,
+  .certificates__slider .next {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    align-items: center;
+  }
+  .certificates__slider .prev {
+    left: 30px;
+  }
+  .certificates__slider .next {
+    right: 30px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .our-services {
     padding: 50px 0;
