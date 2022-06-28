@@ -458,8 +458,8 @@ $cases = get_posts($args);
                         <p>Мы разрабатываем индивидуальный план работ для каждого клиента. И всегда можем объяснить и доказать важность любого пункта. Кроме того, мы готовим отдельный план работ на каждый месяц и обсуждаем его с клиентом. В процессе оптимизации сайта мы можем корректировать стратегию с учетом новых задач или новых условий со стороны поисковых систем.</p>
                     </div>
                     <div class="text-video__visible-content">
-                        <figure><iframe width="100%" height="280" src="https://www.youtube.com/embed/mGD6nsuGleQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <figcaption>Baltic Digital Days 2020 “Как я строил Ant-Team.ru и что из этого вышло”</figcaption>
+                        <figure><iframe width="100%" height="280" src="https://www.youtube.com/embed/Uyo4nQsXdm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption>Немного об Ant-Team.ru</figcaption>
                         </figure>
                     </div>
                 </div>
