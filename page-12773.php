@@ -106,7 +106,7 @@ get_header();
                 <div class="who-did-kf__wrapper">
                     <div class="who-did-kf__header">
                         <div class="section__header">
-                            <h2>Кто выполняет аудит</h2>
+                            <h2>Кто выполняет услугу</h2>
                             <div class="who-did-kf__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                         </div>
                     </div>
@@ -115,28 +115,42 @@ get_header();
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                 <div class="specialist__title">Старший SEO-специалист</div>
-                                <div class="specialist__desc">Предлагает нестандартные решения для повышения доверия со стороны пользователей и поисковиков, выявляет параметры, которые, как правило, не описываются в чек-листах.</div>
+                                <div class="specialist__desc">Предлагает наиболее оптимальную стратегию и нестандартные решения, исходя из особенностей проекта и своего опыта.</div>
                             </div>
                         </div>
                         <div class="who-did-kf__item">
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                 <div class="specialist__title">Руководитель проекта</div>
-                                <div class="specialist__desc">Планирует и координирует работы команды, задает вектор проработки проекта, подбирает конкурентов и выполняет ту часть аудита, для которой требуется нестандартный подход.</div>
+                                <div class="specialist__desc">Следит за динамикой проекта и соблюдением сроков, координирует работу команды. Выполняет задачи, требующие квалификации.</div>
                             </div>
                         </div>
                         <div class="who-did-kf__item">
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                 <div class="specialist__title">Младший SEO-специалист</div>
-                                <div class="specialist__desc">Проводит подготовку и сбор стандартных параметров сравнения, занимается оформлением итоговых файлов.</div>
+                                <div class="specialist__desc">Выполняет простые задачи по чек-листу, проводит проверку базовых ошибок на сайте до и после публикации.</div>
                             </div>
                         </div>
                         <div class="who-did-kf__item">
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                <div class="specialist__title">Редактор, копирайтеры и контент-менеджер</div>
-                                <div class="specialist__desc">Помогают собрать, оформить и опубликовать информацию по итогам YMYL-аудита.</div>
+                                <div class="specialist__title">Редактор, копирайтеры и переводчики</div>
+                                <div class="specialist__desc">Готовят качественный текстовый контент для будущего сайта.</div>
+                            </div>
+                        </div>
+                        <div class="who-did-kf__item">
+                            <div class="specialist">
+                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                <div class="specialist__title">Контент-менеджер</div>
+                                <div class="specialist__desc">Размещает контент на страницах, при необходимости удаляет лишнее.</div>
+                            </div>
+                        </div>
+                        <div class="who-did-kf__item">
+                            <div class="specialist">
+                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                <div class="specialist__title">Разработчик</div>
+                                <div class="specialist__desc">Настраивает хостинг, верстает сайт, исправляет баги и технические ошибки перед публикацией, выполняет прочие работы с кодом.</div>
                             </div>
                         </div>
                     </div>
