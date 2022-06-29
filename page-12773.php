@@ -9,8 +9,8 @@ get_header();
                 <div class="audit__wrapper">
                     <div class="audit__content">
                         <h1>Выход на иностранный рынок</h1>
-                        <p>Страницы, которые могут повлиять на благополучие и безопасность пользователей, относятся к категории &ldquo;Кошелек или жизнь&rdquo; - &ldquo;Your Money Your Life&rdquo;. Данная терминология взята из <a href="https://ant-team.ru/google/">Инструкции для асессоров Google</a>.</p>
-                        <div class="audit__price"><span>от 10 000 ₽</span></div><a class="link" href="#sec-tariffs">смотреть все тарифы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
+                        <p>Поможем вывести бизнес на иностранный рынок “с нуля”! Полное сопровождение от идеи до публикации сайта и дальнейшего SEO-продвижения!</p>
+                        <div class="audit__price"><span>от 150 000 ₽</span></div>
                     </div>
                     <div class="audit__form">
                         <?php get_template_part('template-parts/forms/contact-form') ?>
@@ -26,14 +26,14 @@ get_header();
             <div class="col-12">
                 <div class="navigation__wrapper">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что проверяет аудит КФ</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет аудит КФ</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что вы получите</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет услугу</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-workflow">Порядок работы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-why">Почему мы</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#sec-results">Результаты наших клиентов</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#sec-dop_services">Дополнительные услуги</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-tariffs">Тарифы</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-dop_services">Дополнительные услуги</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-advices">Статьи</a></li>
                     </ul>
                 </div>
             </div>
