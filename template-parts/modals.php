@@ -6,6 +6,10 @@
     <?php get_template_part('template-parts/forms/zakazat_audit') ?>
 </div>
 
+<div class="order-form modal-form" id="zakazat-audit-form" style="display:none;">
+    <?php get_template_part('template-parts/forms/zakazat_audit') ?>
+</div>
+
 <div id="modal-article-theme" class="review-form modal-form" style="display:none;">
     <?php get_template_part('template-parts/forms/send-idea') ?>
 </div>

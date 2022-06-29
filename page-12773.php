@@ -168,18 +168,21 @@ get_header();
                     <h2>Порядок работы</h2>
                 </div>
                 <div class="workflow__list">
-                    <div class="workflow__item">Заполнение заявки</div>
-                    <div class="workflow__item">Подписание договора и оплата</div>
-                    <div class="workflow__item">Проведение YMYL-аудита</div>
-                    <div class="workflow__item">Составление списка задач</div>
+                    <div class="workflow__item">Составление стратегии</div>
+                    <div class="workflow__item">Анализ конкурентов</div>
+                    <div class="workflow__item">Дизайн и вёрстка будущего сайта</div>
+                    <div class="workflow__item">Сбор семантики</div>
+                    <div class="workflow__item">Подготовка контента</div>
+                    <div class="workflow__item">Публикация сайта</div>
                 </div>
                 <div class="workflow__order">
-                    <button class="btn" data-fancybox href="#zakazat-audit-form">заказать аудит</button>
+                    <button class="btn" data-fancybox href="#zakazat-audit-form">заказать услугу</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="why" id="sec-why">
     <div class="container">
         <div class="row">
@@ -196,71 +199,34 @@ get_header();
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Квалификация</div>
-                                    <div class="benefit__desc">Сделали первый полный перевод и досконально изучили официальный <a href="https://ant-team.ru/google/">документ Google</a>, рассказывающий о критериях оценки YMYL-страниц</div>
+                                    <div class="benefit__title">Опыт</div>
+                                    <div class="benefit__desc">Опыт в SEO более 10 лет, в иностранном сегменте - с 2020 года</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Экспертность</div>
-                                    <div class="benefit__desc">Провели и опубликовали ряд исследований YMYL-факторов в разных сферах бизнеса</div>
+                                    <div class="benefit__title">Прозрачность</div>
+                                    <div class="benefit__desc">Детально расскажем рекомендации по итогам работы и ответим на все ваши вопросы простыми словами</div>
                                 </div>
                             </div>
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Подход</div>
-                                    <div class="benefit__desc">Составили подробные <a href="https://ant-team.ru/blog/cheklist-ymyl-audita/">чек-листы YMYL-аудита</a> для интернет-магазинов и сайтов услуг</div>
+                                    <div class="benefit__title">Экономия</div>
+                                    <div class="benefit__desc">Честно скажем, на чём можно сэкономить, а на чём экономить не рекомендуется</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Эффективность</div>
-                                    <div class="benefit__desc">Получили отличные результаты и готовые <a href="https://ant-team.ru/blog/polnyj-ymyl-analiz-tematiki-mezhdunarodnye-gruzoperevozki/">кейсы</a> после проработки YMYL-факторов на сайтах наших клиентов</div>
+                                    <div class="benefit__title">Планирование</div>
+                                    <div class="benefit__desc">Составим для вас подробную пошаговую инструкцию от покупки домена до публикации готового сайта</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="why__form">
                         <?php
-                            set_query_var( 'zakazat_audit_title', 'Заявка на аудит коммерческих факторов от Ant-Team.ru' );
+                            set_query_var( 'zakazat_audit_title', 'Заказать услугу' );
                             get_template_part('template-parts/forms/zakazat_audit')
                         ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="results" id="sec-results">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="results__wrapper">
-                    <div class="results__header">
-                        <h2>Результаты наших клиентов</h2>
-                    </div>
-                    <div class="results__content">
-                        <div class="results__nav">
-                            <ul>
-                                <li class="active">Клиент 1</li>
-                                <li>Клиент 2</li>
-                            </ul>
-                        </div>
-                        <div class="results__slider">
-                            <div class="results__item">
-                                <ul>
-                                    <li>Проанализировали сайты клиента и конкурентов (регион - Австрия, язык - немецкий)</li>
-									<li>Составили 34 рекомендации для всего сайта</li>
-									<li>Внедрили более 20 рекомендаций, остальные в работе</li>
-                                </ul>
-                            </div>
-                            <div class="results__item">
-                                <ul>
-                                    <li>Проанализировали сайты клиента и конкурентов (тематика - туризм и отели)</li>
-									<li>Составили 29 рекомендаций для всего сайта</li>
-									<li>Внедрили более 20 рекомендаций, остальные в работе</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -270,7 +236,42 @@ get_header();
 
 <?php get_template_part('template-parts/tariffs') ?>
 
-<?php get_template_part('template-parts/dop_services-yml') ?>
+<?php get_template_part('template-parts/dop_services') ?>
+
+<?php
+$args = [
+    'posts_per_page' => 12,
+    'post__in' => [1142, 8473, 6214, 11210]
+];
+
+$articles = get_posts($args);
+?>
+
+<?php if (count($articles) > 0): ?>
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="articles__header">
+                        <div class="section__header">
+                            <h2>Статьи</h2>
+                            <div class="articles__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                            <a class="link link--more" href="/blog/">все статьи<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
+                        </div>
+                    </div>
+                    <div class="articles__slider">
+                        <?php foreach($articles as $post ): ?>
+                            <?php setup_postdata($post); ?>
+                            <?php get_template_part('template-parts/content'); ?>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
+
 
 <?php
 the_content();
