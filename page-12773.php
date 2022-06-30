@@ -241,7 +241,7 @@ get_header();
 <?php
 $args = [
     'posts_per_page' => 12,
-    'post__in' => [1142, 8473, 6214, 11210]
+    'post__in' => [11428, 8473, 6214, 11210]
 ];
 
 $articles = get_posts($args);
@@ -271,11 +271,6 @@ $articles = get_posts($args);
     </section>
 <?php endif; ?>
 
-
-
-<?php
-the_content();
-?>
 
 <?php
 get_footer();
