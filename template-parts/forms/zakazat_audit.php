@@ -48,5 +48,6 @@
         <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f<?= $formId ?>-o1">
         <input type="hidden" name="_wpcf7_container_post" value="0">
         <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+        <input type="hidden" name="referer" class="wpcf7-form-control wpcf7-text tariff-contactform-field" value="<?php echo $_SERVER['REQUEST_URI'] ?>">
     </form>
 </div>
