@@ -22,6 +22,7 @@
         </div>
 
         <input type="hidden" name="tariff" class="wpcf7-form-control wpcf7-text tariff-contactform-field">
+        <input type="hidden" name="referer" class="wpcf7-form-control wpcf7-text tariff-contactform-field" value="<?php echo $_SERVER['REQUEST_URI'] ?>">
 
         <div>
             <button class="btn">Отправить</button>
