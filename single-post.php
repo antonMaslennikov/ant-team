@@ -570,6 +570,7 @@ $meta = get_post_meta($post->ID);
             <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f<?= $formId ?>-o1">
             <input type="hidden" name="_wpcf7_container_post" value="0">
             <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+            <input type="hidden" name="article_id" value="<?= the_ID() ?>">
             <input type="hidden" name="article" value="<?= the_permalink() ?>">
         </form>
     </div>
