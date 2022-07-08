@@ -462,9 +462,9 @@ add_action( 'wpcf7_submit', 'wp_kama_wpcf7_submit_action', 10, 2 );
  * @return void
  */
 function wp_kama_wpcf7_submit_action( $that, $result ){
-
     // получить статью на почту
-    if ($that->id() == 11131 && $_POST['article_id'] && $_POST['your-email'] && !filter_var(trim($_POST['your-email']), FILTER_VALIDATE_EMAIL)) {
+    if ($that->id() == 11131 && $_POST['article_id'] && $_POST['your-email'] && filter_var(trim($_POST['your-email']), FILTER_VALIDATE_EMAIL)) {
+
         if ($post = get_post( $_POST['article_id'] )) {
 
             require_once 'wp-content/themes/' . get_template() . '/moduls/unisender/UnisenderApi.php';
@@ -477,9 +477,9 @@ function wp_kama_wpcf7_submit_action( $that, $result ){
                 'email' => trim($_POST['your-email']),
                 'sender_name' => 'Ant-team',
                 'sender_email' => 'info@ant-team.ru',
-                'subject' => $post->post_title,
+                'subject' => 'Статья на почту: ' . $post->post_title,
                 'body' => $post->post_content,
-                'list_id' => 1,
+                'list_id' => 522,
             ]);
 
 //            printr($result);
