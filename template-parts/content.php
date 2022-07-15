@@ -1,6 +1,8 @@
 <?php
     $meta = get_post_meta(get_the_ID());
     $category = get_the_category();
+
+    global $POST_FORMATS;
 ?>
 <div <?php /*articles__item*/ ?> <?php post_class('content__item cases__item'); ?> id="post-<?php the_ID(); ?>">
     <div class="card <?php if ($meta['format'][0] != 'case'): ?>card--bordered<?php endif; ?>">
@@ -17,34 +19,7 @@
 
                     <?php if ($meta['format'][0]): ?>
                     <li>
-                        <?php
-                        switch ($meta['format'][0]) {
-                            case 'instruction':
-                                echo 'Инструкция';
-                                break;
-                            case 'article':
-                                echo 'Статья';
-                                break;
-                            case 'study':
-                                echo 'Исследование';
-                                break;
-                            case 'case':
-                                echo 'Кейс';
-                                break;
-                            case 'check-list':
-                                echo 'Чек-лист';
-                                break;
-                            case 'patent':
-                                echo 'Патент';
-                                break;
-                            case 'test':
-                                echo 'Тест';
-                                break;
-                            case 'interview':
-                                echo 'Интервью';
-                                break;
-                        }
-                        ?>
+                        <?= $POST_FORMATS[$meta['format'][0]] ?>
                     </li>
                     <?php endif; ?>
                 </ul>

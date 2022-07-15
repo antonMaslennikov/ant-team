@@ -1,5 +1,7 @@
 <?php
 get_header();
+
+global $POST_FORMATS;
 ?>
 
     <section class="page__header">
@@ -151,7 +153,7 @@ get_header();
                         $args['meta_query'] = [];
 
                         // фильтр по формату
-                        if (in_array($_GET['format'], ['instruction', 'article', 'study', 'case', 'check-list', 'patent', 'test', 'interview'])) {
+                        if ($POST_FORMATS[$_GET['format']]) {
                             $args['meta_query'][] = [
                                 [
                                     'key' => 'format',
