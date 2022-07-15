@@ -9,13 +9,14 @@ get_header();
                 <div class="audit__wrapper">
                     <div class="audit__content">
                         <h1>SEO-консультации</h1>
-                        <p>Поможем вывести бизнес на иностранный рынок “с нуля”! Полное сопровождение от идеи до публикации сайта и дальнейшего SEO-продвижения!</p>
-                        <div class="audit__price"><span>от 150 000 ₽</span></div>
+                        <p>Вам не нужно полноценное продвижение, а достаточно качественной консультации? Квалифицированные SEO-специалисты из Ant-Team.ru помогут вам в формате разового онлайн-созвона или предложат поддержку и кураторство в течение длительного времени!</p>
+                        <div class="audit__price"><span>от 5 000 руб./час</span></div>
+                        <div class="audit__price"><span>от 20 000 руб./месяц</span></div>
                     </div>
                     <div class="audit__form">
                         <?php
-                            set_query_var( 'contact_form_title', 'Заявка на корпоративное обучение SEO' );
-                            set_query_var( 'contact_form_text', 'Оставьте заявку, и мы составим индивидуальную программу занятий по SEO именно для вашей аудитории' );
+                            set_query_var( 'contact_form_title', 'Заявка на консультацию по SEO' );
+                            set_query_var( 'contact_form_text', 'Оставьте заявку, и мы ответим на все интересующие вас вопросы о продвижении сайта простым и понятным языком' );
                             get_template_part('template-parts/forms/contact-form')
                         ?>
                     </div>
@@ -33,6 +34,7 @@ get_header();
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что вы получите</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет услугу</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#employees">Наша команда</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-workflow">Порядок работы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-why">Почему мы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-tariffs">Тарифы</a></li>
@@ -51,18 +53,19 @@ get_header();
             <div class="col-12">
                 <div class="what-check__wrapper">
                     <div class="what-check__header">
-                        <h2>Что вы получите</h2>
+                        <h2>Что вы получите на консультации</h2>
                     </div>
                     <div class="what-check__slider">
                         <div class="what-check__item">
                             <div class="check-list">
                                 <div class="check-list__title"></div>
                                 <ul class="check-list__list">
-                                    <li>Подробный план действий по выходу в иностранный сегмент с оценкой сроков на основе вашего проекта, бюджета и пожеланий</li>
-                                    <li>Приоритезация задач на основе особенностей проекта, ваших пожеланий и выделенного бюджета</li>
-                                    <li>Подробные консультации и контроль на каждом этапе со стороны опытных SEO-специалистов - вам не придётся вникать в техническую составляющую, а также беспокоиться, что какие-то внедрения в будущем будут тормозить продвижение сайта</li>
-                                    <li>Качественное выполнение работ по SEO-оптимизации - “заточенный” под SEO сайт будет изначально иметь больше шансов на ранжирование</li>
-                                    <li>Помощь в контентных работах: подготовка ТЗ на тексты, подбор изображений, написание и редактура текстов, размещение контента</li>
+                                    <li>Экспертное мнение и свежий взгляд на проект от ведущих SEO-специалистов с большим опытом в самых разных проектах</li>
+                                    <li>Понятные ответы на любые ваши вопросы по продвижению сайтов простым языком</li>
+                                    <li>Аргументацию на основе опыта и официальных данных поисковых систем</li>
+                                    <li>Советы по оптимизации и приоритезации обсуждаемых задач</li>
+                                    <li>Проверку работ, выполненных вами или вашими специалистами</li>
+                                    <li>Помощь с составлением плана работ и формулировкой задач</li>
                                 </ul>
                             </div>
                         </div>
@@ -83,17 +86,20 @@ get_header();
                             <h2>FAQ</h2>
                         </div>
                         <ul class="collapsed">
-                            <li class="active"><span>Я хочу начать работать на иностранном рынке, но не знаю, что нужно для создания сайта. Сможете помочь?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
-                                <div>Да, мы можем составить для вас подробную пошаговую стратегию с “нуля” до публикации, опираясь на ваши идеи и пожелания и на наш опыт</div>
+                            <li class="active"><span>Возможен ли единичный созвон с вами, а не постоянное сотрудничество?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
+                                <div>Да, мы можем созвониться один раз и ответить на интересующие вас вопросы.</div>
                             </li>
-                            <li><span>Вы можете собрать семантику на иностранных языках?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
-                                <div>Да, у нас есть опыт и отработанный алгоритм сбора иностранной семантики под Google</div>
+                            <li><span>У меня мало вопросов, сколько стоит самый короткий созвон?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
+                                <div>Стоимость созвона от 5 000 руб./час, часы округляются в большую сторону. То есть созвон длительностью менее 60 минут будет минимально стоить 5 000 руб., созвон длительностью от 1 до 2 часов - 10 000 руб. и так далее.</div>
                             </li>
-                            <li><span>Можно ли заказать продвижение под иностранный сегмент готового сайта?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
-                                <div>Да, вы можете также обратиться к нам за полноценным SEO-продвижением уже готового сайта.</div>
+                            <li><span>Вы можете постоянно контролировать работы моих сеошников?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
+                                <div>Да, мы можем взять проект на поддержку, когда все работы выполняют ваши специалисты, а мы их проверяем и помогаем советами.</div>
                             </li>
-                            <li><span>Вы создадите мне сайт на другом языке для выхода на иностранный рынок?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
-                                <div>Непосредственно создание сайтов (веб-разработка) не является нашей специальностью, однако мы можем составить подробные ТЗ для программистов, проконтролировать их выполнение, и помочь с поиском разработчиков под ваш проект.</div>
+                            <li><span>Вы можете провести аудит моего сайта?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
+                                <div>Да, мы можем провести SEO-аудит любого типа - <a href="/tehnicheski-audit/" target="_blank">технический</a>, <a href="/ymyl-audit/" target="_blank">YMYL</a>, <a href="/audit-kf/" target="_blank">аудит коммерческих факторов</a> и так далее.</div>
+                            </li>
+                            <li><span>Какими программами для совещаний вы пользуетесь?<img src="/wp-content/themes/<?= get_template() ?>/assets/images/B_expand.svg"></span>
+                                <div>Чаще всего мы пользуемся Google Meet. По вашему желанию мы можем созваниваться в других программах, таких как Zoom, Skype, Telegram и т.д. При большинстве звонков понадобится демонстрация экрана.</div>
                             </li>
                         </ul>
                     </div>
@@ -110,7 +116,7 @@ get_header();
                 <div class="who-did-kf__wrapper">
                     <div class="who-did-kf__header">
                         <div class="section__header">
-                            <h2>Кто выполняет услугу</h2>
+                            <h2>Кто проводит консультации</h2>
                             <div class="who-did-kf__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                         </div>
                     </div>
@@ -119,42 +125,14 @@ get_header();
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                 <div class="specialist__title">Старший SEO-специалист</div>
-                                <div class="specialist__desc">Предлагает наиболее оптимальную стратегию и нестандартные решения, исходя из особенностей проекта и своего опыта.</div>
+                                <div class="specialist__desc">Все старшие SEO-специалисты Ant-Team.ru - опытные преподаватели. Они регулярно проводят вебинары, выступают на конференциях, снимают лекции для <a href="https://www.youtube.com/channel/UCUnJn9JZeSAEo2TFzDlICJQ" target="_blank">YouTube</a> и преподают SEO на Skillbox. В повседневном рабочем процессе они непрерывно занимаются обучением младших специалистов с “нуля” до уровня Middle+ и руководят десятками проектов.</div>
                             </div>
                         </div>
                         <div class="who-did-kf__item">
                             <div class="specialist">
                                 <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                 <div class="specialist__title">Руководитель проекта</div>
-                                <div class="specialist__desc">Следит за динамикой проекта и соблюдением сроков, координирует работу команды. Выполняет задачи, требующие квалификации.</div>
-                            </div>
-                        </div>
-                        <div class="who-did-kf__item">
-                            <div class="specialist">
-                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                <div class="specialist__title">Младший SEO-специалист</div>
-                                <div class="specialist__desc">Выполняет простые задачи по чек-листу, проводит проверку базовых ошибок на сайте до и после публикации.</div>
-                            </div>
-                        </div>
-                        <div class="who-did-kf__item">
-                            <div class="specialist">
-                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                <div class="specialist__title">Редактор, копирайтеры и переводчики</div>
-                                <div class="specialist__desc">Готовят качественный текстовый контент для будущего сайта.</div>
-                            </div>
-                        </div>
-                        <div class="who-did-kf__item">
-                            <div class="specialist">
-                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                <div class="specialist__title">Контент-менеджер</div>
-                                <div class="specialist__desc">Размещает контент на страницах, при необходимости удаляет лишнее.</div>
-                            </div>
-                        </div>
-                        <div class="who-did-kf__item">
-                            <div class="specialist">
-                                <div class="specialist__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                <div class="specialist__title">Разработчик</div>
-                                <div class="specialist__desc">Настраивает хостинг, верстает сайт, исправляет баги и технические ошибки перед публикацией, выполняет прочие работы с кодом.</div>
+                                <div class="specialist__desc">Для длительной поддержки проектов назначается опытный руководитель, который будет проверять все задачи ваших SEO-специалистов, составлять план работ и участвовать в регулярных созвонах.</div>
                             </div>
                         </div>
                     </div>
@@ -164,6 +142,8 @@ get_header();
     </div>
 </section>
 
+<?php get_template_part('template-parts/section-employees') ?>
+
 <section class="workflow" id="sec-workflow">
     <div class="container">
         <div class="row">
@@ -172,12 +152,10 @@ get_header();
                     <h2>Порядок работы</h2>
                 </div>
                 <div class="workflow__list">
-                    <div class="workflow__item">Составление стратегии</div>
-                    <div class="workflow__item">Анализ конкурентов</div>
-                    <div class="workflow__item">Дизайн и вёрстка будущего сайта</div>
-                    <div class="workflow__item">Сбор семантики</div>
-                    <div class="workflow__item">Подготовка контента</div>
-                    <div class="workflow__item">Публикация сайта</div>
+                    <div class="workflow__item">Знакомство с проектом</div>
+                    <div class="workflow__item">Изучение запроса от клиента</div>
+                    <div class="workflow__item">Созвон</div>
+                    <div class="workflow__item">Проверка задач</div>
                 </div>
                 <div class="workflow__order">
                     <button class="btn" data-fancybox href="#zakazat-audit-form">заказать услугу</button>
@@ -208,27 +186,28 @@ get_header();
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Прозрачность</div>
-                                    <div class="benefit__desc">Детально расскажем рекомендации по итогам работы и ответим на все ваши вопросы простыми словами</div>
+                                    <div class="benefit__title">Доступность информации</div>
+                                    <div class="benefit__desc">Детально ответим на все ваши вопросы по SEO простыми словами</div>
                                 </div>
                             </div>
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Экономия</div>
-                                    <div class="benefit__desc">Честно скажем, на чём можно сэкономить, а на чём экономить не рекомендуется</div>
+                                    <div class="benefit__title">Преподаватели</div>
+                                    <div class="benefit__desc">Все старшие SEO-специалисты команды - опытные преподаватели</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Планирование</div>
-                                    <div class="benefit__desc">Составим для вас подробную пошаговую инструкцию от покупки домена до публикации готового сайта</div>
+                                    <div class="benefit__title">Кураторство</div>
+                                    <div class="benefit__desc">Поможем контролировать инхаус SEO-специалистов и научим их качественно выполнять задачи</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="why__form">
                         <?php
-                            set_query_var( 'zakazat_audit_title', 'Заказать услугу' );
+                            set_query_var( 'zakazat_audit_title', 'Заявка на консультацию по SEO' );
+                            set_query_var( 'zakazat_audit_text', 'Оставьте заявку, и мы ответим на все интересующие вас вопросы о продвижении сайта простым и понятным языком' );
                             get_template_part('template-parts/forms/zakazat_audit')
                         ?>
                     </div>
@@ -245,7 +224,7 @@ get_header();
 <?php
 $args = [
     'posts_per_page' => 12,
-    'post__in' => [11428, 8473, 6214, 11210]
+    'numberposts' => 12,
 ];
 
 $articles = get_posts($args);
