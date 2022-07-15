@@ -6,8 +6,20 @@
             <h3>Заявка принята</h3>
             <p>Мы свяжемся с вами в ближайшее время и обсудим возможности для продвижения вашего сайта.</p>
         </div>
-        <span class="form__title">Заявка на SEO-продвижение сайта от Ant-Team.ru</span>
-        <p class="form__desc">Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
+        <span class="form__title">
+            <?php if ($title = get_query_var('contact_form_title')): ?>
+                <?= $title ?>
+            <?php else: ?>
+                Заявка на SEO-продвижение сайта от Ant-Team.ru
+            <?php endif; ?>
+        </span>
+        <p class="form__desc">
+            <?php if ($text = get_query_var('contact_form_text')): ?>
+                <?= $text ?>
+            <?php else: ?>
+                Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.
+            <?php endif; ?>
+        </p>
         <div class="form-ctrl">
             <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmPriceFormName" aria-required="1" required="required">
             <label>Имя</label>

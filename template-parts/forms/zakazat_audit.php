@@ -13,7 +13,12 @@
                 Заявка на аудит КФ от Ant-Team.ru
             <?php endif; ?>
         </span>
-        <p class="form__desc">Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
+        <p class="form__desc">
+            <?php if ($text = get_query_var('zakazat_audit_text')): ?>
+                <?= $text ?>
+            <?php else: ?>
+                Оставьте заявку, и наши специалисты подробно расскажут о том, как именно мы можем помочь вашему сайту занять лучшие позиции в поисковой выдаче.</p>
+            <?php endif; ?>
         <div class="form-ctrl">
             <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName" required>
             <label>Имя</label>
