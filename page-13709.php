@@ -187,42 +187,85 @@ get_header();
 
 <section id="sec-why">
     <div class="dual">
-        <section class="why">
+<!--        <section class="why">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-12">-->
+<!--                        <div class="why__wrapper">-->
+<!--                            <div class="why__content">-->
+<!--                                <div class="why__header">-->
+<!--                                    <div class="section__header">-->
+<!--                                        <h2>Почему мы</h2>-->
+<!--                                        <div class="why__dots slick-slider-numbers hidden-xs display-flex-lg"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="why__slider">-->
+<!--                                    <div class="why__item">-->
+<!--                                        <div class="benefit">-->
+<!--                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>-->
+<!--                                            <div class="benefit__title">Опыт</div>-->
+<!--                                            <div class="benefit__desc">Опыт в SEO более 10 лет, в иностранном сегменте - с 2020 года</div>-->
+<!--                                        </div>-->
+<!--                                        <div class="benefit">-->
+<!--                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>-->
+<!--                                            <div class="benefit__title">Доступность информации</div>-->
+<!--                                            <div class="benefit__desc">Детально расскажем о SEO простыми словами с примерами</div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="why__item">-->
+<!--                                        <div class="benefit">-->
+<!--                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>-->
+<!--                                            <div class="benefit__title">Преподаватели</div>-->
+<!--                                            <div class="benefit__desc">Все старшие SEO-специалисты команды - опытные преподаватели и спикеры</div>-->
+<!--                                        </div>-->
+<!--                                        <div class="benefit">-->
+<!--                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>-->
+<!--                                            <div class="benefit__title">Подход</div>-->
+<!--                                            <div class="benefit__desc">Составим уникальный план обучения именно для вашей аудитории</div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section class="advantages">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="why__wrapper">
-                            <div class="why__content">
-                                <div class="why__header">
-                                    <div class="section__header">
-                                        <h2>Почему мы</h2>
-                                        <div class="why__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                        <div class="advantages__wrapper">
+                            <div class="advantages__header">
+                                <div class="section__header">
+                                    <h2>Преимущества</h2>
+                                    <div class="advantages__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
+                                </div>
+                            </div>
+                            <div class="advantages__slider">
+                                <div class="advantages__item">
+                                    <div class="advantage">
+                                        <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                        <div class="advantage__desc">Опыт</div>
+                                        <div class="advantage__desc">Опыт в SEO более 10 лет, в иностранном сегменте - с 2020 года</div>
+                                    </div>
+                                    <div class="advantage">
+                                        <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                        <div class="advantage__desc">Доступность информации</div>
+                                        <div class="advantage__desc">Детально расскажем о SEO простыми словами с примерами</div>
                                     </div>
                                 </div>
-                                <div class="why__slider">
-                                    <div class="why__item">
-                                        <div class="benefit">
-                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                            <div class="benefit__title">Опыт</div>
-                                            <div class="benefit__desc">Опыт в SEO более 10 лет, в иностранном сегменте - с 2020 года</div>
-                                        </div>
-                                        <div class="benefit">
-                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                            <div class="benefit__title">Доступность информации</div>
-                                            <div class="benefit__desc">Детально расскажем о SEO простыми словами с примерами</div>
-                                        </div>
+                                <div class="advantages__item">
+                                    <div class="advantage">
+                                        <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                        <div class="advantage__desc">Преподаватели</div>
+                                        <div class="advantage__desc">Все старшие SEO-специалисты команды - опытные преподаватели и спикеры</div>
                                     </div>
-                                    <div class="why__item">
-                                        <div class="benefit">
-                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                            <div class="benefit__title">Преподаватели</div>
-                                            <div class="benefit__desc">Все старшие SEO-специалисты команды - опытные преподаватели и спикеры</div>
-                                        </div>
-                                        <div class="benefit">
-                                            <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                            <div class="benefit__title">Подход</div>
-                                            <div class="benefit__desc">Составим уникальный план обучения именно для вашей аудитории</div>
-                                        </div>
+                                    <div class="advantage">
+                                        <div class="advantage__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                        <div class="advantage__desc">Подход</div>
+                                        <div class="advantage__desc">Составим уникальный план обучения именно для вашей аудитории</div>
                                     </div>
                                 </div>
                             </div>
