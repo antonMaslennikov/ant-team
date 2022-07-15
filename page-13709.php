@@ -172,7 +172,7 @@ get_header();
                 </div>
                 <div class="workflow__order">
                     <button class="btn" data-fancybox href="#zakazat-audit-form-wrapper">заказать обучение</button>
-                    <div id="zakazat-audit-form-wrapper" style="display: none">
+                    <div class="order-form modal-form" id="zakazat-audit-form-wrapper" style="display:none;">
                     <?php
                         set_query_var( 'zakazat_audit_title', 'Заявка на корпоративное обучение SEO' );
                         set_query_var( 'zakazat_audit_text', 'Оставьте заявку, и мы составим индивидуальную программу занятий по SEO именно для вашей аудитории' );
