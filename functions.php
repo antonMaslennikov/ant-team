@@ -151,7 +151,7 @@ function ant_team_ru_scripts()
 //    }
 
 //    wp_enqueue_style('ant-team-ru-datepicker', get_template_directory_uri() . '/assets/libs/airdatepicker/datepicker.min.css');
-    wp_enqueue_style('ant-team-ru-main', get_template_directory_uri() . '/assets/main.css', array(), '2.0.1');
+    wp_enqueue_style('ant-team-ru-main', get_template_directory_uri() . '/assets/main.css', array(), '2.0.2');
 //    wp_enqueue_style('ant-team-ru-style', get_stylesheet_uri(),array(),'1.0.0');
 
     /**
