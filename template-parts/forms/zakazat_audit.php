@@ -1,6 +1,6 @@
 <?php $formId = 11006; ?>
 
-<div role="form" class="wpcf7" id="wpcf7-f<?= $formId ?>-o1" lang="ru-RU" dir="ltr">
+<div role="form" class="wpcf7" id="wpcf7-f<?= $formId ?>-o1" lang="ru-RU" dir="ltr" <?php if ('none' == get_query_var('zakazat_audit_display')): ?>style="display: none" <?php endif; ?>>
     <form action="/" class="wpcf7-form form init feedback" method="post" data-status="init">
         <div class="form__success">
             <h3>Заявка принята</h3>
