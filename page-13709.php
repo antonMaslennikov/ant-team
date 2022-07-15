@@ -171,7 +171,7 @@ get_header();
                     <div class="workflow__item">Ответы на вопросы</div>
                 </div>
                 <div class="workflow__order">
-                    <button class="btn" data-fancybox href="#zakazat-audit-form-wrapper">заказать обучение</button>
+                    <button class="btn" data-fancybox href="#zakazat-audit-form">заказать обучение</button>
                     <?php
                         set_query_var( 'zakazat_audit_display', 'none' );
                         set_query_var( 'zakazat_audit_title', 'Заявка на корпоративное обучение SEO' );
