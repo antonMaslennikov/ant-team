@@ -224,12 +224,6 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                            <div class="why__form">
-                                <?php
-                                set_query_var( 'zakazat_audit_title', 'Заказать услугу' );
-                                get_template_part('template-parts/forms/zakazat_audit')
-                                ?>
-                            </div>
                         </div>
                     </div>
                 </div>
