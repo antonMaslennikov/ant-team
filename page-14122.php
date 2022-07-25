@@ -92,12 +92,6 @@ get_header();
                             <div class="review">
                                 <div class="review__comment">
                                     <h3 class="review__title">Интернет-магазин цифровой техники</h3>
-                                    <div class="review__rating">
-                                        <div class="rating">
-                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
-                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
-                                        </div>
-                                    </div>
                                     <div class="review__text">Уникальный текст — это хорошо, но иногда он не сильно влияет на видимость. Проанализировав узкую тематику в категории цифровой техники, мы пришли к выводу, что уникальный текст в описании карточки товара влияет на поисковую видимость, но очень незначительно. Поэтому можно сгенерировать тексты автоматически, а деньги направить на наполнение страницы другим контентом.</div>
                                 </div>
                                 <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
@@ -107,12 +101,6 @@ get_header();
                             <div class="review">
                                 <div class="review__comment">
                                     <h3 class="review__title">Сайт медицинских услуг</h3>
-                                    <div class="review__rating">
-                                        <div class="rating">
-                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
-                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
-                                        </div>
-                                    </div>
                                     <div class="review__text">Проанализировав конкурентов из топа, мы пришли к выводу, что количество отзывов влияет на видимость в поисковой выдаче. Лучшая видимость была при наличии 7–10 отзывов. Клиенту не пришлось гадать, сколько отзывов необходимо получить. Можно также проверить, влияет ли размер отзывов на видимость.
                                         Важно! Такой анализ можно провести только при наличии семантического ядра.
                                     </div>
