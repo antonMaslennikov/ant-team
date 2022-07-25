@@ -31,6 +31,7 @@ get_header();
                 <div class="navigation__wrapper">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что вы получите</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#reviews">Пример статистики из анализа</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет услугу</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#employees">Наша команда</a></li>
@@ -68,6 +69,76 @@ get_header();
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="reviews__wrapper">
+                    <div class="reviews__header">
+                        <div class="section__header">
+                            <h2>Пример статистики из анализа</h2>
+                            <div class="reviews__dots slick-slider-numbers hidden-xs display-flex-lg"></div><?php /* <a class="link link--more" href="#">все отзывы<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a> */ ?>
+                        </div>
+                    </div>
+                    <div class="reviews__slider">
+                        <div class="reviews__item">
+                            <div class="review">
+                                <div class="review__comment">
+                                    <h3 class="review__title">Интернет-магазин цифровой техники</h3>
+                                    <div class="review__rating">
+                                        <div class="rating">
+                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="review__text">Уникальный текст — это хорошо, но иногда он не сильно влияет на видимость. Проанализировав узкую тематику в категории цифровой техники, мы пришли к выводу, что уникальный текст в описании карточки товара влияет на поисковую видимость, но очень незначительно. Поэтому можно сгенерировать тексты автоматически, а деньги направить на наполнение страницы другим контентом.</div>
+                                </div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="review">
+                                <div class="review__comment">
+                                    <h3 class="review__title">Сайт медицинских услуг</h3>
+                                    <div class="review__rating">
+                                        <div class="rating">
+                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="review__text">Проанализировав конкурентов из топа, мы пришли к выводу, что количество отзывов влияет на видимость в поисковой выдаче. Лучшая видимость была при наличии 7–10 отзывов. Клиенту не пришлось гадать, сколько отзывов необходимо получить. Можно также проверить, влияет ли размер отзывов на видимость.
+                                        Важно! Такой анализ можно провести только при наличии семантического ядра.
+                                    </div>
+                                </div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="review">
+                                <div class="review__comment">
+                                    <h3 class="review__title">Nwflues.ru</h3>
+                                    <div class="review__rating">
+                                        <div class="rating">
+                                            <div class="rating__under-layer"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/rating.svg"></div>
+                                            <div class="rating__top-layer" style="width:100%"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"><img src="/wp-content/themes/<?= get_template() ?>/assets/images/star.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="review__text">Александра знаю давно, но работать с ним начали совсем недавно. Уже выводимся в топе по гораздо большему количеству ключевых фраз, заметно увеличились посещения на сайте. Про команду могу сказать только хорошее – работают профессионально, дело свое знают, всегда быстро откликаются на все наши вопросы и проблемы.</div>
+                                    <div class="review__author"><b>Туркин Александр</b><span>директор компании</span></div>
+                                </div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__average hidden-md">
+                        <div>Средний рейтинг: 5 из 5 (3 отзыва)</div><a class="btn btn-small">Оставить отзыв</a>
                     </div>
                 </div>
             </div>
