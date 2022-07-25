@@ -404,6 +404,15 @@ body {
   }
 }
 
+.footer-link-development {
+  margin-top: 30px;
+  font-size: 14px;
+  display: flex;
+  .link {
+    margin-left: 5px;
+  }
+}
+
 @media screen and (min-width: 1200px){
   .certificates__slider {
     display: flex;
