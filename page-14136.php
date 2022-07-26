@@ -15,8 +15,8 @@ get_header();
                     </div>
                     <div class="audit__form">
                         <?php
-                            set_query_var( 'contact_form_title', 'Заявка на консультацию по SEO' );
-                            set_query_var( 'contact_form_text', 'Оставьте заявку, и мы ответим на все интересующие вас вопросы о продвижении сайта простым и понятным языком' );
+                            set_query_var( 'contact_form_title', '' );
+                            set_query_var( 'contact_form_text', '' );
                             get_template_part('template-parts/forms/contact-form')
                         ?>
                     </div>
