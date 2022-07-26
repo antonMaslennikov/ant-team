@@ -110,7 +110,7 @@ get_header();
                 <div class="who-did-kf__wrapper">
                     <div class="who-did-kf__header">
                         <div class="section__header">
-                            <h2>Кто выполняем</h2>
+                            <h2>Кто выполняет</h2>
                             <div class="who-did-kf__dots slick-slider-numbers hidden-xs display-flex-lg"></div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@ get_header();
 
 <?php get_template_part('template-parts/tariffs') ?>
 
-<?php get_template_part('template-parts/dop_services') ?>
+<?php get_template_part('template-parts/dop_services-strategy') ?>
 
 <?php
 $args = [
