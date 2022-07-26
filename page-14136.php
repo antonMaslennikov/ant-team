@@ -34,7 +34,6 @@ get_header();
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что вы получите</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет услугу</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#employees">Наша команда</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-workflow">Порядок работы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-why">Почему мы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-tariffs">Тарифы</a></li>
@@ -226,8 +225,8 @@ get_header();
                     </div>
                     <div class="why__form">
                         <?php
-                            set_query_var( 'zakazat_audit_title', 'Заявка на консультацию по SEO' );
-                            set_query_var( 'zakazat_audit_text', 'Оставьте заявку, и мы ответим на все интересующие вас вопросы о продвижении сайта простым и понятным языком' );
+                            set_query_var( 'zakazat_audit_title', '' );
+                            set_query_var( 'zakazat_audit_text', '' );
                             get_template_part('template-parts/forms/zakazat_audit')
                         ?>
                     </div>
@@ -244,7 +243,7 @@ get_header();
 <?php
 $args = [
     'posts_per_page' => 12,
-    'numberposts' => 12,
+    'post__in' => [11428, 8473, 6214, 11210]
 ];
 
 $articles = get_posts($args);
