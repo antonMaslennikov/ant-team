@@ -198,6 +198,11 @@ get_header();
                                     <div class="benefit__title">Уникальный контент от ИИ</div>
                                     <div class="benefit__desc">Мы активно работаем с сервисами генерации текстов, используя ИИ. Будьте уверены, контент на сайте-сателлите будет уникальным</div>
                                 </div>
+                                <div class="benefit">
+                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                    <div class="benefit__title">Собственная база данных (RU и EN)</div>
+                                    <div class="benefit__desc">Мы используем собственную разработку для поиска доменов, которые соответствуют вашей тематике.</div>
+                                </div>
                             </div>
                             <div class="why__item">
                                 <div class="benefit">
@@ -210,11 +215,7 @@ get_header();
                                     <div class="benefit__title">Индексация без проблем</div>
                                     <div class="benefit__desc">Быстро проиндексируем все сателлиты и проставим ссылки на целевой домен без вреда как для донора, так и для акцептора.</div>
                                 </div>
-                                <div class="benefit">
-                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Собственная база данных (RU и EN)</div>
-                                    <div class="benefit__desc">Мы используем собственную разработку для поиска доменов, которые соответствуют вашей тематике.</div>
-                                </div>
+
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
                                     <div class="benefit__title">Аукцион без забот</div>
