@@ -31,9 +31,9 @@ get_header();
                 <div class="navigation__wrapper">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-what">Что вы получите</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#reviews">Пример статистики из анализа</a></li>
-                        <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-who">Кто выполняет услугу</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#sec-faq">FAQ</a></li>
+                        <li class="navigation__item"><a class="navigation__link link" href="#reviews">Пример статистики из анализа</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-workflow">Порядок работы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-why">Почему мы</a></li>
                         <li class="navigation__item"><a class="navigation__link link" href="#sec-tariffs">Тарифы</a></li>
@@ -69,6 +69,29 @@ get_header();
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="workflow" id="sec-workflow">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="workflow__header">
+                    <h2>Порядок работы</h2>
+                </div>
+                <div class="workflow__list">
+                    <div class="workflow__item">Отбор конкурентов</div>
+                    <div class="workflow__item">Сбор данных</div>
+                    <div class="workflow__item">Анализ полученных данных</div>
+                    <div class="workflow__item">Составление рекомендаций</div>
+                    <div class="workflow__item">Оформление отчёта</div>
+                </div>
+                <div class="workflow__order">
+                    <button class="btn" data-fancybox href="#zakazat-audit-form">заказать услугу</button>
                 </div>
             </div>
         </div>
@@ -111,6 +134,15 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="review">
+                                <div class="review__comment">
+                                    <h3 class="review__title">Интернет-магазин товаров для дома</h3>
+                                    <div class="review__text">Проанализировали влияние количества фото в товарной карточке интернет-магазина товаров для дома по конкурентам из топа. Пришли к выводу, что достаточно сделать 5-7 качественных фото товара для каждой карточки.</div>
+                                </div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
                             </div>
                         </div>
                     </div>
@@ -184,28 +216,6 @@ get_header();
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="workflow" id="sec-workflow">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="workflow__header">
-                    <h2>Порядок работы</h2>
-                </div>
-                <div class="workflow__list">
-                    <div class="workflow__item">Отбор конкурентов</div>
-                    <div class="workflow__item">Сбор данных</div>
-                    <div class="workflow__item">Анализ полученных данных</div>
-                    <div class="workflow__item">Составление рекомендаций</div>
-                    <div class="workflow__item">Оформление отчёта</div>
-                </div>
-                <div class="workflow__order">
-                    <button class="btn" data-fancybox href="#zakazat-audit-form">заказать услугу</button>
                 </div>
             </div>
         </div>
