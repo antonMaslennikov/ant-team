@@ -151,8 +151,6 @@ get_header();
     </div>
 </section>
 
-<?php get_template_part('template-parts/section-employees') ?>
-
 <section class="workflow" id="sec-workflow">
     <div class="container">
         <div class="row">
