@@ -161,10 +161,12 @@ get_header();
                     <h2>Порядок работы</h2>
                 </div>
                 <div class="workflow__list">
-                    <div class="workflow__item">Знакомство с проектом</div>
-                    <div class="workflow__item">Изучение запроса от клиента</div>
-                    <div class="workflow__item">Созвон</div>
-                    <div class="workflow__item">Проверка задач</div>
+                    <div class="workflow__item">Согласование количества требуемых сателлитов</div>
+                    <div class="workflow__item">Настройка приватной сети серверов для хостинга</div>
+                    <div class="workflow__item">Покупка доменов</div>
+                    <div class="workflow__item">Восстановление домена или написание контента</div>
+                    <div class="workflow__item">Индексация</div>
+                    <div class="workflow__item">Простановка ссылок</div>
                 </div>
                 <div class="workflow__order">
                     <button class="btn" data-fancybox href="#zakazat-audit-form">заказать услугу</button>
@@ -190,25 +192,35 @@ get_header();
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Опыт</div>
-                                    <div class="benefit__desc">Опыт в SEO более 10 лет, в иностранном сегменте - с 2020 года</div>
+                                    <div class="benefit__title">Без футпринтов</div>
+                                    <div class="benefit__desc">Сэкономим ваши средства и развернем сеть сателлитов в пределах 1–2 виртуальных машин</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Доступность информации</div>
-                                    <div class="benefit__desc">Детально ответим на все ваши вопросы по SEO простыми словами</div>
+                                    <div class="benefit__title">Уникальный контент от ИИ</div>
+                                    <div class="benefit__desc">Мы активно работаем с сервисами генерации текстов, используя ИИ. Будьте уверены, контент на сайте-сателлите будет уникальным</div>
                                 </div>
                             </div>
                             <div class="why__item">
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Преподаватели</div>
-                                    <div class="benefit__desc">Все старшие SEO-специалисты команды - опытные преподаватели</div>
+                                    <div class="benefit__title">Экономия</div>
+                                    <div class="benefit__desc">Честно скажем, на чём можно сэкономить, а на чём экономить не рекомендуется. В том числе рассмотрим вариант работы с архивными PBN-доменами.</div>
                                 </div>
                                 <div class="benefit">
                                     <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
-                                    <div class="benefit__title">Кураторство</div>
-                                    <div class="benefit__desc">Поможем контролировать инхаус SEO-специалистов и научим их качественно выполнять задачи</div>
+                                    <div class="benefit__title">Индексация без проблем</div>
+                                    <div class="benefit__desc">Быстро проиндексируем все сателлиты и проставим ссылки на целевой домен без вреда как для донора, так и для акцептора.</div>
+                                </div>
+                                <div class="benefit">
+                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                    <div class="benefit__title">Собственная база данных (RU и EN)</div>
+                                    <div class="benefit__desc">Мы используем собственную разработку для поиска доменов, которые соответствуют вашей тематике.</div>
+                                </div>
+                                <div class="benefit">
+                                    <div class="benefit__icon"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 28C13 29.1046 13.8954 30 15 30C16.1046 30 17 29.1046 17 28V17H28C29.1046 17 30 16.1046 30 15C30 13.8954 29.1046 13 28 13H17V2C17 0.895431 16.1046 0 15 0C13.8954 0 13 0.89543 13 2V13H2C0.895431 13 0 13.8954 0 15C0 16.1046 0.89543 17 2 17H13V28Z" fill="#A9A5A0"/></svg></div>
+                                    <div class="benefit__title">Аукцион без забот</div>
+                                    <div class="benefit__desc">Самостоятельно подадим заявки на выкуп доменов, проведем аукцион в рамках согласованных бюджетов без вашего участия.</div>
                                 </div>
                             </div>
                         </div>
