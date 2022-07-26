@@ -542,15 +542,15 @@ $meta = get_post_meta($post->ID);
             <span class="form__title">Отправить статью на почту</span>
             <p class="form__desc"></p>
             <div class="form-ctrl">
-                <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text gtmPriceFormName  wpcf7-validates-as-required" aria-required="true" required>
+                <input type="text" name="your-name" placeholder="Имя (Александр)" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmFreeAuditFormName" aria-required="true" required>
                 <label>Имя</label>
             </div>
             <div class="form-ctrl">
-                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" required>
+                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail" aria-required="true" aria-invalid="false" required>
                 <label>E-mail</label>
             </div>
             <div>
-                <button class="btn">Отправить</button>
+                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit gtmGetFreeFormSubmit g-recaptcha btn">
                 <div>
                     <div class="form-ctrl">
                         <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
@@ -563,6 +563,7 @@ $meta = get_post_meta($post->ID);
             <div class="wpcf7-response-output" aria-hidden="true"></div>
 
             <input type="hidden" name="your-check-bot" value="" class="wpcf7-form-control wpcf7-hidden">
+            <input type="hidden" name="g-recaptcha-response" value="" />
 
             <input type="hidden" name="_wpcf7" value="<?= $formId ?>">
             <input type="hidden" name="_wpcf7_version" value="5.3.2">

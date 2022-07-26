@@ -15,11 +15,11 @@
             <label>Тема статьи*</label>
         </div>
         <div class="form-ctrl">
-            <input type="text"  name="your-name" required>
+            <input type="text"  name="your-name" required class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required gtmFreeAuditFormName">
             <label>Имя*</label>
         </div>
         <div class="form-ctrl">
-            <input type="email"  name="your-email" required>
+            <input type="email"  name="your-email" required class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email gtmFreeAuditEmail">
             <label>E-mail*</label>
         </div>
         <div class="form-ctrl">
@@ -27,7 +27,8 @@
             <label>О себе*</label>
         </div>
         <div>
-            <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit gtmGetPriceFormSubmit btn">
+            <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit gtmGetFreeFormSubmit g-recaptcha btn">
+
             <div>
                 <div class="form-ctrl">
                     <label class="checkbox">Я ознакомлен и согласен с <a href='/politika-konfidentsialnosti/'>Политикой в отношении обработки персональных данных</a>
@@ -40,6 +41,7 @@
         <div class="wpcf7-response-output" aria-hidden="true"></div>
 
         <input type="hidden" name="your-check-bot" value="" class="wpcf7-form-control wpcf7-hidden">
+        <input type="hidden" name="g-recaptcha-response" value="" />
 
         <input type="hidden" name="_wpcf7" value="<?= $formId ?>">
         <input type="hidden" name="_wpcf7_version" value="5.3.2">
