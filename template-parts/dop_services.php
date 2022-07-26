@@ -34,7 +34,7 @@
                         <div class="dop_services__item">
                             <div class="dop_service">
                                 <div class="tariff__header">
-                                    <h3 class="dop_service__title">Проверка микроразметки</h3><span class="dop_service__price">от 1 800 ₽</span>
+                                    <h3 class="dop_service__title">Проверка микроразметки</h3><span class="dop_service__price">от 5 000 ₽</span>
                                 </div>
                                 <div class="dop_service__content">
                                     <div class="dop_service__desc">Проверим внедренную микроразметку на сайте и составим подробное ТЗ по внедрению недостающей или исправлению имеющейся микроразметки по всем действующим стандартам SEO.</div>
