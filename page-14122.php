@@ -122,7 +122,7 @@ get_header();
                                     <h3 class="review__title">Интернет-магазин цифровой техники</h3>
                                     <div class="review__text">Уникальный текст — это хорошо, но иногда он не сильно влияет на видимость. Проанализировав узкую тематику в категории цифровой техники, мы пришли к выводу, что уникальный текст в описании карточки товара влияет на поисковую видимость, но очень незначительно. Поэтому можно сгенерировать тексты автоматически, а деньги направить на наполнение страницы другим контентом.</div>
                                 </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/1.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/07/1.svg"></div>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -133,7 +133,7 @@ get_header();
                                         Важно! Такой анализ можно провести только при наличии семантического ядра.
                                     </div>
                                 </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/2.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/07/2.svg"></div>
                             </div>
                         </div>
                         <div class="reviews__item">
@@ -142,7 +142,7 @@ get_header();
                                     <h3 class="review__title">Интернет-магазин товаров для дома</h3>
                                     <div class="review__text">Проанализировали влияние количества фото в товарной карточке интернет-магазина товаров для дома по конкурентам из топа. Пришли к выводу, что достаточно сделать 5-7 качественных фото товара для каждой карточки.</div>
                                 </div>
-                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/04/3.png"></div>
+                                <div class="review__graph"><img width="500" src="/wp-content/uploads/2022/07/3.svg"></div>
                             </div>
                         </div>
                     </div>
