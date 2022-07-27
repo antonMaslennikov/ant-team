@@ -223,11 +223,11 @@ get_header();
 
 <?php
     set_query_var( 'videos', [
-        ['code' => 'https://www.youtube.com/embed/7-L8H47U-q4', 'title' => 'Как понять, что на сайте крутят поведенческие факторы? Инструменты SEO-специалиста для выявления ПФ'],
-        ['code' => 'https://www.youtube.com/embed/StCNwCEz5gQ', 'title' => 'Лекция 20. Работа с негативной репутацией'],
-        ['code' => 'https://www.youtube.com/embed/2Vp_AABpo6k', 'title' => 'Коммерческие факторы ранжирования в e-commerce и на сайтах услуг: что делать и чего ожидать'],
-        ['code' => 'https://www.youtube.com/embed/rr3KlJZi0H0', 'title' => 'Микроразметка: основные понятия и виды. Лекция 16'],
-        ['code' => 'https://www.youtube.com/embed/YvukfD5kApc', 'title' => 'Лекция 22. Классический сбор семантики'],
+        ['code' => '7-L8H47U-q4', 'title' => 'Как понять, что на сайте крутят поведенческие факторы? Инструменты SEO-специалиста для выявления ПФ'],
+        ['code' => 'StCNwCEz5gQ', 'title' => 'Лекция 20. Работа с негативной репутацией'],
+        ['code' => '2Vp_AABpo6k', 'title' => 'Коммерческие факторы ранжирования в e-commerce и на сайтах услуг: что делать и чего ожидать'],
+        ['code' => 'rr3KlJZi0H0', 'title' => 'Микроразметка: основные понятия и виды. Лекция 16'],
+        ['code' => 'YvukfD5kApc', 'title' => 'Лекция 22. Классический сбор семантики'],
     ] );
     get_template_part('template-parts/section-videos')
 ?>
