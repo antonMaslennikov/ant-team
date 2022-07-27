@@ -6,7 +6,7 @@
                     <div class="videos__header">
                         <div class="section__header">
                             <h2>Видео</h2>
-                            <div class="videos__dots slick-slider-numbers hidden-xs display-flex-lg"></div><a class="link link--more" href="#">больше видео<img src="assets/images/S_link.svg"></a>
+                            <div class="videos__dots slick-slider-numbers hidden-xs display-flex-lg"></div><a class="link link--more" href="#">больше видео<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a>
                         </div>
                     </div>
                     <div class="videos__slider">
