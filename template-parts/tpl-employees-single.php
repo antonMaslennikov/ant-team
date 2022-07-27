@@ -294,35 +294,18 @@ foreach($pageMeta AS $key => $value) {
         </section>
     <?php endif; ?>
 
-    <?php if (count($videos) > 0): ?>
-        <section class="videos">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="videos__wrapper">
-                            <div class="videos__header">
-                                <div class="section__header">
-                                    <h2>Видео</h2>
-                                    <div class="videos__dots slick-slider-numbers hidden-xs display-flex-lg"></div><?php /*<a class="link link--more" href="/blog/videos/">больше видео<img src="/wp-content/themes/<?= get_template() ?>/assets/images/S_link.svg"></a> */ ?>
-                                </div>
-                            </div>
-                            <div class="videos__slider">
-                                <?php foreach ($videos as $video): ?>
-                                    <div class="videos__item">
-                                        <div class="video">
-                                            <figure><iframe width="100%" height="250px" src="https://www.youtube.com/embed/<?= get_post_meta($video['ID'], 'video_link', true) ?>" title="<?= $video['post_title'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                <figcaption><?= $video['post_title'] ?></figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <?php endif; ?>
+    <?php
+        if (count($videos) > 0) {
+            $foo = [];
+
+            foreach ($videos as $video) {
+                $foo[] = ['code' => get_post_meta($video['ID'], 'video_link', true), 'title' => $video['post_title']];
+            }
+
+            set_query_var( 'videos', $foo);
+            get_template_part('template-parts/section-videos');
+        }
+    ?>
 
     <?php if (count($achievments) > 0): ?>
     <section class="achievments">
